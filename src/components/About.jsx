@@ -26,13 +26,13 @@ const About = () => {
             </p>
             <p>
               卒業研究："虚時間発展を用いた励起状態探索の最短ベクトル問題への応用"
-              <a href="/article.pdf" target="_blank">
+              <a href="" target="_blank">
                 <span
                   className="focus:text-blue-200 underline hover:text-blue-500 
                 transition-color duration-500"
                 >
                   {" "}
-                  ダウンロード
+                  {/* ダウンロード */}
                 </span>
               </a>
             </p>
