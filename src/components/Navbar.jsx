@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="logo">
-        <Link href="/">Kochin's Portfolio</Link>
+        <Link href="/">Kota's Portfolio</Link>
       </div>
       <a
         href=""
