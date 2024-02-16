@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Skills = () => {
   const [isHovered, setIsHovered] = useState(false);
-  
+
   const handleOver = () => {
     setIsHovered(true);
   };
@@ -15,7 +15,7 @@ const Skills = () => {
   return (
     <div>
       <div className="skills-container">
-        <h2>
+        <h2 id="skills-name">
           <span className="text-blue-300">S</span>kills
         </h2>
         <div className="grid-skills">

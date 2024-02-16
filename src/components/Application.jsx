@@ -4,7 +4,7 @@ const Application = () => {
   return (
     <div>
       <div className="about-container">
-        <h2 className="font-weight-600">
+        <h2 className="font-weight-600" id="application-name">
           <span className="text-green-700">A</span>pplication
         </h2>
       </div>

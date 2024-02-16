@@ -7,7 +7,7 @@ const About = () => {
     <div className="flex-col w-full">
       <hr className="w-full " />
       <div className="about-container">
-        <h2>
+        <h2 id="about-name">
           <span className="text-blue-700 ">A</span>bout Me
         </h2>
         <div className="flex-about">
@@ -55,9 +55,9 @@ const About = () => {
               src="/photo.jpg"
               alt="sample"
               className="profile-img"
-              layout="fill"
-              //   width={500}
-              //   height={100}
+              //   layout="responsive"
+              width={500}
+              height={100}
             />
           </div>
         </div>

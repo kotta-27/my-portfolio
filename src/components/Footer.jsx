@@ -1,11 +1,29 @@
 // components/Footer.jsx
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollToElement = () => {
+    const element = document.getElementById("projects-name-test"); // 要素のIDを指定して取得
+    element.scrollIntoView({ behavior: "smooth", block: "start" }); // 要素までスクロール
+  };
   return (
     <div>
       <hr />
       <div className="footer-container">
         <p>© {new Date().getFullYear()} Kota's Portfolio</p>
+        <a
+          href=""
+          onClick={scrollToTop}
+          className="border px-3 py-1 rounded-lg text-lg hover:bg-gray-600 transition duration-300"
+        >
+          TOP
+        </a>
         <div className="social_icons">
           {/* twitter */}
           <a
@@ -34,6 +52,8 @@ const Footer = () => {
           >
             <i className="fa-brands fa-instagram"></i>
           </a>
+
+          <div id="projects-name-test"></div>
         </div>
       </div>
     </div>

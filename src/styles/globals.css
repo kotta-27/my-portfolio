@@ -401,3 +401,7 @@ hr {
   margin-bottom: 1rem;
   text-align: center;
 }
+
+.font-custom {
+  font-family: 'Hiragino', sans-serif; /* フォントをRobotoに設定 */
+}
