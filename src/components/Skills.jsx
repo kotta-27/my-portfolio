@@ -2,14 +2,13 @@
 import { useState } from "react";
 
 const Skills = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleOver = () => {
-    setIsHovered(true);
+  const [isHoveredPython, setIsHoveredPython] = useState(false);
+  const handleOverPython = () => {
+    setIsHoveredPython(true);
   };
 
-  const handleLeave = () => {
-    setIsHovered(false);
+  const handleLeavePython = () => {
+    setIsHoveredPython(false);
   };
 
   return (
@@ -41,8 +40,8 @@ const Skills = () => {
           </div>
           <div
             className="skill-card python"
-            onMouseOver={handleOver}
-            onMouseLeave={handleLeave}
+            onMouseOver={handleOverPython}
+            onMouseLeave={handleLeavePython}
           >
             <i className="fa-brands fa-python python-icon"></i>
             <p>Python</p>
@@ -57,7 +56,7 @@ const Skills = () => {
         </div>
       </div>
       {/* if isHovered */}
-      {isHovered && (
+      {isHoveredPython && (
         <div className="flex items-center justify-center">
           <p className="bg-gray-200 px-8 py-2 text-black rounded-lg text-lg mx-4 ">
             Qiksit

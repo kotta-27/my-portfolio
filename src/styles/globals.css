@@ -9,12 +9,13 @@
 }
 
 body {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  font-family: 'Hiragino', sans-serif; /* フォントをRobotoに設定 */
   font-size: 16px;
   line-height: 1.5;
-  background-color: #1D1E20;
+  background-color: #1D1E10;
   color: #DADADB;
-  width: 900px;
+  width: 970px;
   margin: 0 auto;
   padding: 0 0;
 }
