@@ -306,6 +306,11 @@ hr {
   background-color: #3cfda6;
 }
 
+.skills-container .grid-skills .flutter:hover {
+  background-color: #fd3cd6;
+}
+
+
 /* Projects */
 .projects-container {
   padding: 2rem 0;

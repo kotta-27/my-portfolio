@@ -53,6 +53,9 @@ const Skills = () => {
           <div className="skill-card c">
             <p>C / C++</p>
           </div>
+          <div className="skill-card flutter">
+            <p>flutter(勉強中)</p>
+          </div>
         </div>
       </div>
       {/* if isHovered */}
