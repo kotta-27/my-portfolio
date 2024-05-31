@@ -17,7 +17,11 @@ const Projects = () => {
           projectData.map((project) => (
             <div className="project-card flex-col" key={project.id}>
               <div>
-                <img src={project.image} alt="12" className="hover:scale-110" />
+                <img
+                  src={project.image}
+                  alt="12"
+                  className="scale-on-hover-card"
+                />
               </div>
               <div className="lang-view py-2">
                 <div className="project-header flex bg-gray-700 rounded">

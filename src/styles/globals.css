@@ -318,7 +318,7 @@ hr {
 }
 
 .scale-on-hover-app:hover {
-  transform: scale(0.98); /* ホバー時にスケールを1.1倍に */
+  transform: scale(1.02); /* ホバー時にスケールを1.1倍に */
 }
 
 .scale-on-hover-github {
@@ -395,6 +395,14 @@ hr {
   font-size: 16px;
   margin-bottom: 10px;
   color: #b3b3b3;
+}
+
+.scale-on-hover-card {
+  transition: transform 0.3s ease; /* スムーズな変換のためのトランジション */
+}
+
+.scale-on-hover-card:hover {
+  transform: scale(1.04); /* ホバー時にスケールを1.1倍に */
 }
 
 /* contact */
