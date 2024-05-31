@@ -233,6 +233,8 @@ hr {
   }
 }
 
+
+
 /* Skills */
 .skills-container {
   padding: 2rem 0;
@@ -310,6 +312,23 @@ hr {
   background-color: #fd3cd6;
 }
 
+/* Application */
+.scale-on-hover-app {
+  transition: transform 0.3s ease; /* スムーズな変換のためのトランジション */
+}
+
+.scale-on-hover-app:hover {
+  transform: scale(0.98); /* ホバー時にスケールを1.1倍に */
+}
+
+.scale-on-hover-github {
+  transition: transform 0.3s ease; /* スムーズな変換のためのトランジション */
+}
+
+.scale-on-hover-github:hover {
+  transform: scale(1.1); /* ホバー時にスケールを1.1倍に */
+  color: yellow;
+}
 
 /* Projects */
 .projects-container {

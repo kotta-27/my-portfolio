@@ -17,7 +17,7 @@ const Application2 = () => {
             alt="Quantum Circuit Simulator Application"
             width={700}
             style={{ margin: "auto" }}
-            className="translate hover:scale-95"
+            className="translate scale-on-hover-app"
             shadow
           />
         </a>
@@ -31,8 +31,7 @@ const Application2 = () => {
           {/* Added container div with flex and justify-end */}
           <a href="https://github.com/itscreek/qual-frontend" target="_blank">
             <i
-              className="fa-brands fa-github text-3xl py-4 px-2 hover:text-amber-300 
-					hover:scale-110 translate shadow"
+              className="fa-brands fa-github text-3xl py-4 px-2 scale-on-hover-github translate shadow"
               style={{ fontSize: "3rem" }}
             ></i>
           </a>
