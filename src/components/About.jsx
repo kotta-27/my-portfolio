@@ -28,7 +28,8 @@ const About = () => {
             <p>
               卒業研究："虚時間発展を用いた励起状態探索の最短ベクトル問題への応用"{" "}
               <br />
-              研究テーマ：量子コンピューティング，量子アルゴリズム，虚時間発展法，格子暗号
+              研究テーマ：量子コンピューティング，量子アルゴリズム，虚時間発展法，格子暗号，Floquet
+              Engineering
               <a href="" target="_blank">
                 <span
                   className="focus:text-blue-200 underline hover:text-blue-500 
@@ -63,8 +64,9 @@ const About = () => {
               </a>
               <br></br>
               2024/5：量子アニーリングアイディアソン GroupWork 全体2位 <br></br>
+              2024/6：Progateハッカソン powered by AWS 最優秀賞
             </p>
-            <p>趣味：スマブラ，スノボ🏂，ボウリング🎳</p>
+            <p>趣味：スマブラ，スノボ🏂，ボウリング🎳，数学</p>
           </div>
           <div
             className="about-img"
