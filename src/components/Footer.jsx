@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="social_icons">
           {/* twitter */}
           <a
-            href="https://x.com/plou__m?s=20"
+            href="https://x.com/mel134983774?s=21&t=R42xS1Q9nVQVgQYX8-PIPQ"
             aria-label="Twitter"
             target="_blank"
             rel="noopener noreferrer"
