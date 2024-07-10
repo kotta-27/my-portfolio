@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 * {
   margin: 0;
   padding: 0;
@@ -43,6 +44,12 @@ li {
   align-items: center;
   padding: 1rem 0;
   background-color: #1D1E20;
+}
+
+.nav-container .nav-name{
+  margin-top: 10px;
+  font-size: 3rem;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .nav-container .logo {
@@ -177,9 +184,10 @@ hr {
 }
 
 .about-container h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  font-family: 'Caveat', cursive;
 }
 
 .about-container .flex-about {
@@ -241,9 +249,10 @@ hr {
 }
 
 .skills-container h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  font-family: 'Caveat', cursive; 
 }
 
 .skills-container .grid-skills {
@@ -336,9 +345,10 @@ hr {
 }
 
 .projects-container h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  font-family: 'Caveat', cursive;
 }
 
 .projects-grid {
@@ -423,9 +433,10 @@ hr {
 }
 
 .contact-container h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  font-family: 'Caveat', cursive;
 }
 
 .contact-container p {

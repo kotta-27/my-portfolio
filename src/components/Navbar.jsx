@@ -11,9 +11,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="nav-container">
+    <div className="nav-container mt-5">
       <div className="logo">
-        <a href="/" className="text-3xl font-custom" onClick={scrollToTop}>
+        <a href="/" className="nav-name text-3xl font-custom " onClick={scrollToTop}>
           Kota's Portfolio
         </a>
       </div>

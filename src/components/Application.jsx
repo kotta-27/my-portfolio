@@ -3,14 +3,15 @@ import React from "react";
 const Application = () => {
   return (
     <div>
-      <div className="about-container">
+      {/* <div className="about-container">
         <h2 className="font-weight-600" id="application-name">
           <span className="text-green-700">A</span>pplication
         </h2>
-      </div>
+      </div> */}
+      <div className="about-container"></div>
       <div className="justify-center border p-3 bg-gray-900">
         <div className="flex items-center justify-center">
-          <p className="text-2xl text-white-700 font-bold underline py-2">
+          <p className="text-2xl text-white-700 font-bold underline py-2 my-5">
             量子回路デモアプリケーション
           </p>
         </div>

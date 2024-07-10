@@ -8,7 +8,7 @@ const About = () => {
       <hr className="w-full " />
       <div className="about-container">
         <h2 id="about-name">
-          <span className="text-blue-700 ">A</span>bout Me
+          <span className="text-blue-700">A</span>bout Me
         </h2>
         <div className="flex-about">
           <div className="about-text">
@@ -70,15 +70,15 @@ const About = () => {
           </div>
           <div
             className="about-img"
-            style={{ position: "relative", width: "350px", height: "450px" }}
+            style={{ position: "relative", width: "400px", height: "450px" }}
           >
             <Image
-              src="/photo2.jpg"
+              src="/mepic.jpg"
               alt="sample"
               className="profile-img"
               //   layout="responsive"
-              width={500}
-              height={100}
+              width={1000}
+              height={1000}
             />
           </div>
         </div>
