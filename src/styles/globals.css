@@ -16,7 +16,7 @@ body {
   line-height: 1.5;
   background-color: #1c1c1c;
   color: #DADADB;
-  width: 970px;
+  width: 1100px;
   margin: 0 auto;
   padding: 0 0;
 }
@@ -199,6 +199,10 @@ hr {
 
 .about-container .flex-about .about-text {
   width: 50%;
+}
+
+.about-container .about-my-name{
+  font-family: 'Meiryo';
 }
 
 .about-container .flex-about .about-text p {
