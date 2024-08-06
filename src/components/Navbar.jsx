@@ -13,11 +13,15 @@ const Navbar = () => {
   return (
     <div className="nav-container mt-5">
       <div className="logo">
-        <a href="/" className="nav-name text-3xl font-custom " onClick={scrollToTop}>
+        <a
+          href="/"
+          className="nav-name text-3xl font-custom "
+          onClick={scrollToTop}
+        >
           Kota's Portfolio
         </a>
       </div>
-      <div className="link-container">
+      <div className="flex">
         <a
           href="#about-name"
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-2 transition duration-500"
