@@ -107,10 +107,10 @@ const About = () => {
             />
           </h2>
         </div>
-        <div className="flex-about">
+        <div className="flex-about w-full">
           <div
             ref={contentRef}
-            className={`about-text transition-all duration-1000 ease-out transform ${
+            className={`about-text transition-all duration-1000 ease-out transform  ${
               isVisible.content
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 translate-x-full"
@@ -166,8 +166,18 @@ const About = () => {
               2023/9〜 ：株式会社QunaSys 量子x情報インターン<br></br>
               2024/2〜：量子コンピューティング公開伴送型生配信授業QC4U2 参加{" "}
               <br></br>
-              2024/6〜：株式会社CRISP エンジニアインターン
-              <br></br> <br></br>[ 実績 ] <br></br>
+              2024/6〜：株式会社CRISP エンジニアインターン <br></br>
+              2024/8：理化学研究所×日本科学未来館主催「
+              <a
+                href="https://www.miraikan.jst.go.jp/events/202408033551.html"
+                target="_blank"
+                className="underline hover:text-blue-500 transition-color duration-500"
+              >
+                クイズとゲームでせまる！量子コンピュータ
+              </a>
+              」学生スタッフ
+              <br></br>
+              <br></br>[ 実績 ] <br></br>
               2024/5：量子コンピューティング公開伴送型生配信授業「QC4U2」GroupWork
               全体5位 量子タイピングゲーム
               <br /> &nbsp;&nbsp;&nbsp;

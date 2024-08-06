@@ -8,6 +8,7 @@ import Application2 from "@/components/Application2";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Application3 from "@/components/Application3";
+import Application4 from "@/components/Application4";
 
 // import Head from 'next/head';
 
@@ -18,6 +19,7 @@ const Home = () => {
         {/* <Hero /> */}
         <About />
         <Skills />
+        <Application4 />
         <Application3 />
         <Application />
         <Application2 />

@@ -43,59 +43,7 @@ const Application3 = () => {
 
   return (
     <div>
-      <div className="about-container overflow-hidden mt-20">
-        <div
-          ref={titleRef}
-          className={`relative inline-block font-weight-600 transition-all duration-1000 ease-out transform ${
-            isTitleVisible
-              ? "opacity-100 translate-x-0"
-              : "opacity-0 -translate-x-full"
-          }`}
-          id="application-name"
-        >
-          <h2 className="text-4xl mb-2" style={{ position: "relative" }}>
-            <span className="text-green-700 inline-block transition-all duration-300 transform hover:scale-110">
-              A
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              p
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              p
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              l
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              i
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              c
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              a
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              t
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              i
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              o
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              n
-            </span>
-            <span
-              style={{
-                ...underlineStyle,
-                transform: isTitleVisible ? "scaleX(1)" : "scaleX(0)",
-              }}
-            />
-          </h2>
-        </div>
-      </div>
+      <div className="about-container overflow-hidden "></div>
       <div className="justify-center border p-3 bg-gray-900 text-white">
         <div className="relative flex justify-center items-center mb-6">
           <div className="text-2xl font-bold underline py-2 my-5">
