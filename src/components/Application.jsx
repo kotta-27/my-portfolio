@@ -26,7 +26,7 @@ const Application = () => {
             width={700}
             style={{ margin: "auto" }}
             className="translate scale-on-hover-app"
-            shadow
+            shadow="true"
           />
         </a>
         <div className="flex items-center justify-center py-3">

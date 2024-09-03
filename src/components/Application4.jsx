@@ -124,7 +124,7 @@ const Application4 = () => {
             width={700}
             style={{ margin: "auto" }}
             className="translate scale-on-hover-app"
-            shadow
+            shadow="true"
           />
         </a>
         <div className="flex items-center justify-center py-3 text-center">
@@ -138,10 +138,7 @@ const Application4 = () => {
         <div className="flex justify-end">
           {" "}
           {/* Added container div with flex and justify-end */}
-          <a
-            href="https://github.com/kotta-27/202406hackathon_frontend"
-            target="_blank"
-          >
+          <a href="https://github.com/kotta-27/qpizza-game" target="_blank">
             <i
               className="fa-brands fa-github text-3xl py-4 px-2 scale-on-hover-github translate shadow"
               style={{ fontSize: "3rem" }}
