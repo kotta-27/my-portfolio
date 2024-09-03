@@ -1,5 +1,3 @@
-// pages/_document.js
-
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
@@ -7,6 +5,38 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Kota Mizuno's portfolio website showcasing projects, skills, and achievements."
+        />
+        <meta
+          name="keywords"
+          content="Kota Mizuno, portfolio, developer, projects, web development"
+        />
+        <meta name="author" content="Kota Mizuno" />
+        {/* Open Graph Meta Tags for better social sharing */}
+        <meta property="og:title" content="Kota Mizuno Portfolio" />
+        <meta
+          property="og:description"
+          content="Explore the projects and skills of Kota Mizuno, a web developer."
+        />
+        <meta
+          property="og:url"
+          content="https://my-portfolio-murex-eight-71.vercel.app/"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="URL_TO_YOUR_IMAGE" />{" "}
+        {/* Replace with your image URL */}
+        {/* Twitter Card meta tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Kota Mizuno Portfolio" />
+        <meta
+          name="twitter:description"
+          content="Explore the projects and skills of Kota Mizuno."
+        />
+        <meta name="twitter:image" content="URL_TO_YOUR_IMAGE" />{" "}
+        {/* Replace with your image URL */}
         <title>Kota Mizuno</title>
         <link
           rel="stylesheet"
