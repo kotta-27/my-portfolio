@@ -135,20 +135,23 @@ const About = () => {
               研究テーマ：量子コンピューティング，量子アルゴリズム，虚時間発展法，格子暗号，Floquet
               Engineering
             </p>
-            <p>🎉論文投稿しました！</p>
-            <p className="bg-white p-4 rounded-md text-black">
-              <a
-                href="https://arxiv.org/abs/2408.16062v1"
-                target="_blank"
-                className="underline text-blue-700 hover:text-blue-500 transition-color duration-500"
-              >
-                Quantum Algorithm for Shortest Vector Problems with Folded
-                Spectrum Method
-              </a>
-              <br />
-              Kota Mizuno, Shohei Watabe <br />
-              arXiv:2408.16062 [quant-ph] <br />
-            </p>
+            <p className="text-2xl">🎉論文投稿しました！</p>
+            <div className="bg-gray-100 rounded-md flex flex-col justify-center items-center p-2 mb-5">
+              <p>
+                <a
+                  href="https://arxiv.org/abs/2408.16062v1"
+                  target="_blank"
+                  className="underline text-blue-700 hover:text-blue-500 transition-color duration-500 text-center"
+                >
+                  Quantum Algorithm for Shortest Vector Problems with Folded
+                  Spectrum Method
+                </a>
+              </p>
+              <p className="text-black">
+                Kota Mizuno, Shohei Watabe <br />
+                arXiv:2408.16062 [quant-ph]
+              </p>
+            </div>
             <p>
               [ 経歴 ] <br></br>
               2023/2：統計検定2級合格<br></br>
