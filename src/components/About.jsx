@@ -93,12 +93,6 @@ const About = () => {
             <span className="inline-block transition-all duration-300 transform hover:scale-110">
               {" "}
             </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              M
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              e
-            </span>
             <span
               style={{
                 ...underlineStyle,
@@ -119,7 +113,7 @@ const About = () => {
             {/* Content remains unchanged */}
             <p>
               <span className="text-3xl about-my-name">
-                水野 航太 (Mizuno Kota)
+                Kota Mizuno / 水野 航太
               </span>
             </p>
             <p>
@@ -140,15 +134,20 @@ const About = () => {
               <br />
               研究テーマ：量子コンピューティング，量子アルゴリズム，虚時間発展法，格子暗号，Floquet
               Engineering
-              <a href="" target="_blank">
-                <span
-                  className="focus:text-blue-200 underline hover:text-blue-500 
-                transition-color duration-500"
-                >
-                  {" "}
-                  {/* ダウンロード */}
-                </span>
+            </p>
+            <p>🎉論文投稿しました！</p>
+            <p className="bg-white p-4 rounded-md text-black">
+              <a
+                href="https://arxiv.org/abs/2408.16062v1"
+                target="_blank"
+                className="underline text-blue-700 hover:text-blue-500 transition-color duration-500"
+              >
+                Quantum Algorithm for Shortest Vector Problems with Folded
+                Spectrum Method
               </a>
+              <br />
+              Kota Mizuno, Shohei Watabe <br />
+              arXiv:2408.16062 [quant-ph] <br />
             </p>
             <p>
               [ 経歴 ] <br></br>
@@ -175,7 +174,8 @@ const About = () => {
               >
                 クイズとゲームでせまる！量子コンピュータ
               </a>
-              」学生スタッフ
+              」学生スタッフ <br />
+              2024/9〜：株式会社スタディスト ソフトウェアエンジニアインターン
               <br></br>
               <br></br>[ 実績 ] <br></br>
               2024/5：量子コンピューティング公開伴送型生配信授業「QC4U2」GroupWork

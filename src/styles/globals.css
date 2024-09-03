@@ -198,7 +198,7 @@ hr {
 }
 
 .about-container .flex-about .about-text {
-  width: 50%;
+  width: 60%;
 }
 
 .about-container .about-my-name{
@@ -246,6 +246,13 @@ hr {
 }
 
 
+
+/* paper */
+.paper-container{
+  padding: 2rem 1rem;
+  background-color: #e6e6e6;
+  border-radius: 2%;
+}
 
 /* Skills */
 .skills-container {
