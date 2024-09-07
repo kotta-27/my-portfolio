@@ -139,7 +139,7 @@ const About = () => {
             <div className="bg-gray-100 rounded-md flex flex-col justify-center items-center p-2 mb-5">
               <p>
                 <a
-                  href="https://arxiv.org/abs/2408.16062v1"
+                  href="https://arxiv.org/abs/2408.16062v2"
                   target="_blank"
                   className="underline text-blue-700 hover:text-blue-500 transition-color duration-500 text-center"
                 >
@@ -149,7 +149,7 @@ const About = () => {
               </p>
               <p className="text-black">
                 Kota Mizuno, Shohei Watabe <br />
-                arXiv:2408.16062 [quant-ph]
+                arXiv:2408.16062[v2] [quant-ph]
               </p>
             </div>
             <p>
