@@ -5,12 +5,12 @@ const Application2 = () => {
     <div>
       <div className="about-container"></div>
       <div className="justify-center border p-3 bg-gray-900 text-white">
-        <div className="relative flex justify-center items-center mb-6">
+        <div className="relative flex flex-col md:flex-row justify-center items-center mb-6">
           <div className="text-2xl font-bold underline py-2 my-5">
             量子タイピングゲーム
           </div>
           <div
-            className="absolute right-0 mr-20 px-4 py-3 rounded-lg font-bold text-sm text-center transform hover:scale-105 transition-transform duration-300 ease-in-out shadow-lg"
+            className="md:absolute md:right-0 md:mr-20 px-4 py-3 rounded-lg font-bold text-sm text-center duration-300 ease-in-out shadow-lg mt-4 md:mt-0"
             style={{
               background: "linear-gradient(135deg, #4F46E5, #2563EB)",
               color: "#ffffff",

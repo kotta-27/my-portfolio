@@ -45,12 +45,12 @@ const Application3 = () => {
     <div>
       <div className="about-container overflow-hidden "></div>
       <div className="justify-center border p-3 bg-gray-900 text-white">
-        <div className="relative flex justify-center items-center mb-6">
+        <div className="relative flex flex-col md:flex-row justify-center items-center mb-6">
           <div className="text-2xl font-bold underline py-2 my-5">
             掲示板ジェネレータ
           </div>
           <div
-            className="absolute right-0 mr-20 px-4 py-3 rounded-lg font-bold text-sm text-center  duration-300 ease-in-out shadow-lg"
+            className="md:absolute md:right-0 md:mr-20 px-4 py-3 rounded-lg font-bold text-sm text-center duration-300 ease-in-out shadow-lg mt-4 md:mt-0"
             style={{
               background: "linear-gradient(135deg, #FFD700, #FFA500)",
               color: "#000",

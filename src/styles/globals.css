@@ -66,9 +66,9 @@ li {
   font-weight: bold;
 }
 
-.nav-container .logo .text-alpha {
+.text-alpha {
   font-size: 3rem;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.3);
   font-weight: bold;
 }
 
@@ -228,6 +228,7 @@ hr {
 
 .about-container .about-my-name{
   font-family: 'Meiryo';
+  font-size: 30px;
 }
 
 .about-container .flex-about .about-text p {

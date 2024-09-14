@@ -111,9 +111,7 @@ const About = () => {
           >
             {/* Content remains unchanged */}
             <p>
-              <span className="text-3xl about-my-name">
-                Kota Mizuno / 水野 航太
-              </span>
+              <span className="about-my-name">Kota Mizuno / 水野 航太</span>
             </p>
             <p>
               芝浦工業大学大学院 理工学研究科 電気・電子情報工学専攻 M1
@@ -203,7 +201,7 @@ const About = () => {
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 -translate-x-full"
             }`}
-            style={{ position: "relative", width: "400px", height: "450px" }}
+            style={{ position: "relative", width: "300px", height: "400px" }}
           >
             <Image
               src="/mepic.jpg"
