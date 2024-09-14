@@ -72,6 +72,10 @@ li {
   font-weight: bold;
 }
 
+.mobile-name{
+  font-size: 10px;
+}
+
 .link-container{
   margin-left: auto;
   display: flex;

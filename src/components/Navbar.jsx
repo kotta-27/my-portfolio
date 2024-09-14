@@ -125,12 +125,12 @@ const Navbar = () => {
 
       {isOpen && (
         <div className="md:hidden" id="mobile-menu">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="px-2 pt-20 pb-3 space-y-1 sm:px-3">
             {["About", "Skills", "Application", "Projects"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}-name`}
-                className="bg-blue-500 hover:bg-blue-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="bg-blue-500 hover:bg-blue-700 text-white block px-3 py-2 rounded-md font-medium mobile-name"
                 onClick={(e) =>
                   scrollToSection(e, `#${item.toLowerCase()}-name`)
                 }
