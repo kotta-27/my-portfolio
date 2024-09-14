@@ -43,7 +43,7 @@ const Application4 = () => {
 
   return (
     <div>
-      <div className="about-container overflow-hidden mt-20">
+      <div className="about-container overflow-hidden">
         <div
           ref={titleRef}
           className={`relative inline-block font-weight-600 transition-all duration-1000 ease-out transform ${

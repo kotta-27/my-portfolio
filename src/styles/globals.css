@@ -16,7 +16,7 @@ body {
   line-height: 1.5;
   background-color: #1c1c1c;
   color: #DADADB;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   padding: 0 0;
 }
@@ -39,11 +39,20 @@ li {
 
 /* Navbar */
 .nav-container {
+  width: 85%;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  position: fixed;
+  height: 80px;
   align-items: center;
-  padding: 1rem 0;
-  background-color: #1D1E20;
+  padding: 3rem 4rem;
+  background-color: #1c1c1c;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4)
+}
+
+.nav-container.bg-opacity-50 {
+  background-color: rgba(28, 28, 28, 0.5); /* Semi-transparent background */
 }
 
 .nav-container .nav-name{
@@ -53,8 +62,19 @@ li {
 }
 
 .nav-container .logo {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: bold;
+}
+
+.nav-container .logo .text-alpha {
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+.link-container{
+  margin-left: auto;
+  display: flex;
 }
 
 .cta-btn {
@@ -179,8 +199,13 @@ hr {
 }
 
 /* About */
+.about-wrapper{
+  /* padding-top: 100px; */
+}
+
 .about-container {
   padding: 2rem 0;
+  /* padding-top: 100px; */
 }
 
 .about-container h2 {
@@ -245,7 +270,10 @@ hr {
   }
 }
 
-
+#about-name, #skills-name, #application-name, #projects-name {
+  padding-top: 110px; /* この値はナビゲーションバーの高さよりも大きくする必要があります */
+  /* margin-top: -100px; パディングと同じ負の値を設定 */
+}
 
 /* paper */
 .paper-container{

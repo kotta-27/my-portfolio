@@ -46,7 +46,7 @@ const Skills = () => {
 
   return (
     <div>
-      <div className="skills-container mt-20">
+      <div className="skills-container">
         <div
           ref={titleRef}
           className={`relative inline-block transition-all duration-1000 transform ${

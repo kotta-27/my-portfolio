@@ -59,8 +59,7 @@ const About = () => {
   };
 
   return (
-    <div className="flex-col w-full">
-      <hr className="w-full" />
+    <div className="flex-col w-full about-wrapper">
       <div className="about-container overflow-hidden">
         <div
           ref={titleRef}

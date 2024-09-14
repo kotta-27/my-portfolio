@@ -1,8 +1,24 @@
-import Link from "next/link";
-import Footer from "./Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
+  const [isTransparent, setIsTransparent] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 30;
+      if (show) {
+        setIsTransparent(true);
+      } else {
+        setIsTransparent(false);
+      }
+    };
+
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -11,38 +27,44 @@ const Navbar = () => {
   };
 
   return (
-    <div className="nav-container mt-5">
+    <div
+      className={`nav-container ${
+        isTransparent ? "bg-opacity-50" : ""
+      } transition-all duration-300`}
+    >
       <div className="logo">
         <a
           href="/"
-          className="nav-name text-3xl font-custom "
+          className={`nav-name font-custom ${
+            isTransparent ? "text-alpha" : ""
+          }`}
           onClick={scrollToTop}
         >
           Kota's Portfolio
         </a>
       </div>
-      <div className="flex">
+      <div className="link-container">
         <a
           href="#about-name"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-2 transition duration-500"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded mx-2 transition duration-500"
         >
           About
         </a>
         <a
           href="#skills-name"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-2 transition duration-500"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded mx-2 transition duration-500"
         >
           Skills
         </a>
         <a
           href="#application-name"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-2 transition duration-500"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded mx-2 transition duration-500"
         >
           Application
         </a>
         <a
           href="#projects-name"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-2 transition duration-500"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded mx-2 transition duration-500"
         >
           Projects
         </a>
