@@ -87,6 +87,9 @@ const Application4 = () => {
             <span className="inline-block transition-all duration-300 transform hover:scale-110">
               n
             </span>
+            <span className="inline-block transition-all duration-300 transform hover:scale-110">
+              s
+            </span>
             <span
               style={{
                 ...underlineStyle,
