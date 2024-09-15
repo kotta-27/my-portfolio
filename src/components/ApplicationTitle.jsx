@@ -45,7 +45,10 @@ const ApplicationTitle = ({ myTitle }) => {
   const titleColorClass = "app-name-head-" + myTitle.toLowerCase();
 
   return (
-    <div className="about-container overflow-hidden p-4">
+    <div
+      className="about-container overflow-hidden p-4"
+      id={`${myTitle.toLowerCase()}-name`}
+    >
       <div className="h-20"></div>
       <div
         ref={titleRef}
