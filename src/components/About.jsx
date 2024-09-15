@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import ApplicationTitle from "./ApplicationTitle";
 
 const About = () => {
   const [isVisible, setIsVisible] = useState({
@@ -61,45 +62,7 @@ const About = () => {
   return (
     <div className="flex-col w-full about-wrapper">
       <div className="about-container overflow-hidden">
-        <div
-          ref={titleRef}
-          className={`relative inline-block transition-all duration-1000 ease-out transform ${
-            isVisible.title
-              ? "opacity-100 translate-x-0"
-              : "opacity-0 -translate-x-full"
-          }`}
-        >
-          <h2
-            id="about-name"
-            className="text-4xl mb-2"
-            style={{ position: "relative" }}
-          >
-            <span className="text-blue-700 inline-block transition-all duration-300 transform hover:scale-110">
-              A
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              b
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              o
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              u
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              t
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              {" "}
-            </span>
-            <span
-              style={{
-                ...underlineStyle,
-                transform: isVisible.title ? "scaleX(1)" : "scaleX(0)",
-              }}
-            />
-          </h2>
-        </div>
+        <ApplicationTitle myTitle={"About"} color={"blue"} colorValue={"700"} />
         <div className="flex-about w-full">
           <div
             ref={contentRef}

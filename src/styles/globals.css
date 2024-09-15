@@ -500,3 +500,20 @@ hr {
 .font-custom {
   font-family: 'Hiragino', sans-serif; /* フォントをRobotoに設定 */
 }
+
+
+.app-name-head-about{
+  color: rgb(23, 11, 252);
+}
+
+.app-name-head-applications{
+  color: rgb(96 165 250);
+}
+
+.app-name-head-skills{
+  color: rgb(1, 184, 86);
+}
+
+.app-name-head-projects{
+  color: rgb(243, 137, 9);
+}

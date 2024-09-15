@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import ApplicationTitle from "./ApplicationTitle";
 
 const Application4 = () => {
   const [isTitleVisible, setIsTitleVisible] = useState(false);
@@ -43,62 +44,11 @@ const Application4 = () => {
 
   return (
     <div>
-      <div className="about-container overflow-hidden">
-        <div
-          ref={titleRef}
-          className={`relative inline-block font-weight-600 transition-all duration-1000 ease-out transform ${
-            isTitleVisible
-              ? "opacity-100 translate-x-0"
-              : "opacity-0 -translate-x-full"
-          }`}
-          id="application-name"
-        >
-          <div
-            className="text-2xl mb-2 app-name"
-            style={{ position: "relative" }}
-          >
-            <span className="text-green-700 inline-block transition-all duration-300 transform hover:scale-110">
-              A
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              p
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              p
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              l
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              i
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              c
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              a
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              t
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              i
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              o
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              ns
-            </span>
-            <span
-              style={{
-                ...underlineStyle,
-                transform: isTitleVisible ? "scaleX(1)" : "scaleX(0)",
-              }}
-            />
-          </div>
-        </div>
-      </div>
+      <ApplicationTitle
+        myTitle={"Applications"}
+        color={"blue"}
+        colorValue={"700"}
+      />
       <div className="justify-center border p-3 bg-gray-900 text-white">
         <div className="relative flex flex-col sm:flex-row items-center mb-6">
           <div className="w-full sm:w-1/3" />

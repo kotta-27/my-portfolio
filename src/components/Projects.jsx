@@ -1,6 +1,7 @@
 // components/Projects.jsx
 "use client";
 
+import ApplicationTitle from "./ApplicationTitle.jsx";
 import { projectData } from "./data.js";
 import React from "react";
 
@@ -9,9 +10,7 @@ const Projects = () => {
 
   return (
     <div className="projects-container">
-      <h2 id="projects-name" ref={ref}>
-        <span className="text-orange-700">P</span>rojects
-      </h2>
+      <ApplicationTitle myTitle={"Projects"} />
       <div className="projects-grid">
         {projectData &&
           projectData.map((project) => (

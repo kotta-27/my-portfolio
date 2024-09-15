@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+import Application from "./Application";
+import ApplicationTitle from "./ApplicationTitle";
 
 const Skills = () => {
   const [isHoveredPython, setIsHoveredPython] = useState(false);
@@ -47,45 +49,11 @@ const Skills = () => {
   return (
     <div>
       <div className="skills-container">
-        <div
-          ref={titleRef}
-          className={`relative inline-block transition-all duration-1000 transform ${
-            isVisible
-              ? "opacity-100 translate-x-0"
-              : "opacity-0 -translate-x-full"
-          }`}
-        >
-          <h2
-            id="skills-name"
-            className="text-4xl mb-2"
-            style={{ position: "relative" }}
-          >
-            <span className="text-blue-300 inline-block transition-all duration-300 transform hover:scale-110">
-              S
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              k
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              i
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              l
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              l
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              s
-            </span>
-            <span
-              style={{
-                ...underlineStyle,
-                transform: isVisible ? "scaleX(1)" : "scaleX(0)",
-              }}
-            />
-          </h2>
-        </div>
+        <ApplicationTitle
+          myTitle={"Skills"}
+          color={"red"}
+          colorValue={"400"}
+        />
         <div className="grid-skills">
           {/* Skill cards remain unchanged */}
           <div className="skill-card html">
