@@ -52,8 +52,9 @@ const Application3 = () => {
           </div>
           <div className="w-full sm:w-1/3 flex justify-end">
             <div
-              classsName="md:absolute md:right-0 md:mr-20 px-4 py-3 rounded-lg font-bold text-sm text-center duration-300 ease-in-out shadow-lg mt-4 md:mt-0"
+              className="px-4 py-3 rounded-lg font-bold text-sm text-center duration-300 ease-in-out shadow-lg mt-4 sm:mt-0"
               style={{
+                marginRight: "1rem",
                 background: "linear-gradient(135deg, #FFD700, #FFA500)",
                 color: "#000",
                 textShadow: "1px 1px 2px rgba(0,0,0,0.1)",
