@@ -6,22 +6,25 @@ const Application2 = () => {
       <div className="about-container"></div>
       <div className="justify-center border p-3 bg-gray-900 text-white">
         <div className="relative flex flex-col md:flex-row justify-center items-center mb-6">
-          <div className="text-2xl font-bold underline py-2 my-5">
+          <div className="w-full sm:w-1/3" />
+          <div className="text-2xl font-bold underline py-2 my-5 sm:my-0 w-full sm:w-1/3 text-center">
             量子タイピングゲーム
           </div>
-          <div
-            className="md:absolute md:right-0 md:mr-20 px-4 py-3 rounded-lg font-bold text-sm text-center duration-300 ease-in-out shadow-lg mt-4 md:mt-0"
-            style={{
-              background: "linear-gradient(135deg, #4F46E5, #2563EB)",
-              color: "#ffffff",
-              textShadow: "1px 1px 2px rgba(0,0,0,0.2)",
-              boxShadow:
-                "0 4px 6px rgba(37, 99, 235, 0.3), 0 1px 3px rgba(37, 99, 235, 0.1)",
-            }}
-          >
-            QC4U2 GroupWork
-            <br />
-            全体5位
+          <div className="w-full sm:w-1/3 flex justify-end">
+            <div
+              className="px-4 py-3 rounded-lg font-bold text-sm text-center duration-300 ease-in-out shadow-lg mt-4 sm:mt-0"
+              style={{
+                background: "linear-gradient(135deg, #4F46E5, #2563EB)",
+                color: "#ffffff",
+                textShadow: "1px 1px 2px rgba(0,0,0,0.2)",
+                boxShadow:
+                  "0 4px 6px rgba(37, 99, 235, 0.3), 0 1px 3px rgba(37, 99, 235, 0.1)",
+              }}
+            >
+              QC4U2 GroupWork
+              <br />
+              全体5位
+            </div>
           </div>
         </div>
 

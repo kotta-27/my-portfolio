@@ -176,20 +176,21 @@ const About = () => {
               </a>
               」学生スタッフ <br />
               2024/8〜：量子ICT人材育成プログラムNQC 参加 <br />
-              2024/9〜：株式会社スタディスト ソフトウェアエンジニアインターン <br />
-              2024/10〜：株式会社Jij インターン 
+              2024/9〜：株式会社スタディスト ソフトウェアエンジニアインターン{" "}
+              <br />
+              2024/10〜：株式会社Jij インターン
               <br></br>
               <br></br>[ 実績 ] <br></br>
               2024/5：量子コンピューティング公開伴送型生配信授業「QC4U2」GroupWork
               全体5位 量子タイピングゲーム
-              <br /> &nbsp;&nbsp;&nbsp;
+              {/* <br /> &nbsp;&nbsp;&nbsp;
               <a
                 href="https://app.qualcloud.net/"
                 target="_blank"
                 className="underline hover:text-blue-500 transition-color duration-500"
               >
                 作品はこちら
-              </a>
+              </a> */}
               <br></br>
               2024/5：量子アニーリングアイディアソン GroupWork 全体2位 <br></br>
               2024/6：Progateハッカソン powered by AWS 最優秀賞

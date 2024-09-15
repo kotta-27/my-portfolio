@@ -45,23 +45,26 @@ const Application3 = () => {
     <div>
       <div className="about-container overflow-hidden "></div>
       <div className="justify-center border p-3 bg-gray-900 text-white">
-        <div className="relative flex flex-col md:flex-row justify-center items-center mb-6">
-          <div className="text-2xl font-bold underline py-2 my-5">
+        <div className="relative flex flex-col sm:flex-row items-center mb-6">
+          <div className="w-full sm:w-1/3" />
+          <div className="text-2xl font-bold underline py-2 my-5 sm:my-0 w-full sm:w-1/3 text-center">
             掲示板ジェネレータ
           </div>
-          <div
-            className="md:absolute md:right-0 md:mr-20 px-4 py-3 rounded-lg font-bold text-sm text-center duration-300 ease-in-out shadow-lg mt-4 md:mt-0"
-            style={{
-              background: "linear-gradient(135deg, #FFD700, #FFA500)",
-              color: "#000",
-              textShadow: "1px 1px 2px rgba(0,0,0,0.1)",
-              boxShadow:
-                "0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)",
-            }}
-          >
-            Progate×AWS
-            <br />
-            ハッカソン最優秀賞作品
+          <div className="w-full sm:w-1/3 flex justify-end">
+            <div
+              classsName="md:absolute md:right-0 md:mr-20 px-4 py-3 rounded-lg font-bold text-sm text-center duration-300 ease-in-out shadow-lg mt-4 md:mt-0"
+              style={{
+                background: "linear-gradient(135deg, #FFD700, #FFA500)",
+                color: "#000",
+                textShadow: "1px 1px 2px rgba(0,0,0,0.1)",
+                boxShadow:
+                  "0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)",
+              }}
+            >
+              Progate×AWS
+              <br />
+              ハッカソン最優秀賞作品
+            </div>
           </div>
         </div>
 
