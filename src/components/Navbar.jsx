@@ -126,7 +126,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden" id="mobile-menu">
           <div className="px-2 pt-20 pb-3 space-y-1 sm:px-3">
-            {["About", "Skills", "Application", "Projects"].map((item) => (
+            {["About", "Skills", "Applications", "Projects"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}-name`}

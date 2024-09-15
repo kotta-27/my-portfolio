@@ -44,11 +44,7 @@ const Application4 = () => {
 
   return (
     <div>
-      <ApplicationTitle
-        myTitle={"Applications"}
-        color={"blue"}
-        colorValue={"700"}
-      />
+      <ApplicationTitle myTitle={"Applications"} />
       <div className="justify-center border p-3 bg-gray-900 text-white">
         <div className="relative flex flex-col sm:flex-row items-center mb-6">
           <div className="w-full sm:w-1/3" />

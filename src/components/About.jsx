@@ -62,7 +62,8 @@ const About = () => {
   return (
     <div className="flex-col w-full about-wrapper">
       <div className="about-container overflow-hidden">
-        <ApplicationTitle myTitle={"About"} color={"blue"} colorValue={"700"} />
+        <div className="h-20"></div>
+        <ApplicationTitle myTitle={"About"} />
         <div className="flex-about w-full">
           <div
             ref={contentRef}

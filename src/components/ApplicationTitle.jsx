@@ -49,7 +49,7 @@ const ApplicationTitle = ({ myTitle }) => {
       className="about-container overflow-hidden p-4"
       id={`${myTitle.toLowerCase()}-name`}
     >
-      <div className="h-20"></div>
+      <div></div>
       <div
         ref={titleRef}
         className={`relative inline-block font-bold transition-all duration-1000 ease-out ${

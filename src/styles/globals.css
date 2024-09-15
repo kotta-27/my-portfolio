@@ -282,10 +282,6 @@ hr {
   }
 }
 
-#about-name, #skills-name, #application-name, #projects-name {
-  padding-top: 110px; /* この値はナビゲーションバーの高さよりも大きくする必要があります */
-  /* margin-top: -100px; パディングと同じ負の値を設定 */
-}
 
 /* paper */
 .paper-container{
@@ -515,5 +511,5 @@ hr {
 }
 
 .app-name-head-projects{
-  color: rgb(243, 137, 9);
+  color: rgb(255, 152, 26);
 }

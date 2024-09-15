@@ -49,11 +49,7 @@ const Skills = () => {
   return (
     <div>
       <div className="skills-container">
-        <ApplicationTitle
-          myTitle={"Skills"}
-          color={"red"}
-          colorValue={"400"}
-        />
+        <ApplicationTitle myTitle={"Skills"} />
         <div className="grid-skills">
           {/* Skill cards remain unchanged */}
           <div className="skill-card html">
