@@ -53,7 +53,7 @@ const Application4 = () => {
           }`}
           id="application-name"
         >
-          <h2 className="text-4xl mb-2" style={{ position: "relative" }}>
+          <h2 className="text-3xl mb-2" style={{ position: "relative" }}>
             <span className="text-green-700 inline-block transition-all duration-300 transform hover:scale-110">
               A
             </span>
