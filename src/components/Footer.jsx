@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="footer-container">
         <p>© {new Date().getFullYear()} Kota's Portfolio</p>
         <a
-          href=""
+          href="#"
           onClick={scrollToTop}
           className="border px-3 py-1 rounded-lg text-lg hover:bg-gray-600 transition duration-300"
         >
