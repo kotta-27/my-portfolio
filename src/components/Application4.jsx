@@ -53,7 +53,10 @@ const Application4 = () => {
           }`}
           id="application-name"
         >
-          <h2 className="text-3xl mb-2" style={{ position: "relative" }}>
+          <div
+            className="text-2xl mb-2 app-name"
+            style={{ position: "relative" }}
+          >
             <span className="text-green-700 inline-block transition-all duration-300 transform hover:scale-110">
               A
             </span>
@@ -93,7 +96,7 @@ const Application4 = () => {
                 transform: isTitleVisible ? "scaleX(1)" : "scaleX(0)",
               }}
             />
-          </h2>
+          </div>
         </div>
       </div>
       <div className="justify-center border p-3 bg-gray-900 text-white">
