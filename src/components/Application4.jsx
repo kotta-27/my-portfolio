@@ -85,10 +85,7 @@ const Application4 = () => {
               o
             </span>
             <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              n
-            </span>
-            <span className="inline-block transition-all duration-300 transform hover:scale-110">
-              s
+              ns
             </span>
             <span
               style={{
