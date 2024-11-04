@@ -72,7 +72,7 @@ const Application4 = () => {
 
         <a href="https://qpizza-game.vercel.app/" target="_blank">
           <img
-            src="/qpizzaapp.png"
+            src="/qpizzaapp2.png"
             alt="Quantum Circuit Simulator Application"
             width={700}
             style={{ margin: "auto" }}
@@ -87,6 +87,8 @@ const Application4 = () => {
           丁寧な解説をつけており，量子情報を学ぶ第一歩になれば幸いです．
           <br />
           理研×未来館イベント「クイズとゲームで迫る！量子コンピュータ」の展示作品として作成しました．
+          <br />
+          日本語/英語/中国語に対応しています．
         </div>
         <div className="flex justify-end">
           {" "}

@@ -157,7 +157,11 @@ const About = () => {
               </a> */}
               <br></br>
               2024/5：量子アニーリングアイディアソン GroupWork 全体2位 <br></br>
-              2024/6：Progateハッカソン powered by AWS 最優秀賞
+              2024/6：Progateハッカソン powered by AWS 最優秀賞 <br></br>
+              2024/10：量子アニーリング国際ネットワークINQA2024国際会議
+              ポスター発表 <br></br>
+              2024/10：Quantum Innovation2024 ポスターセッション発表 <br></br>
+              2024/10：第13回量子ソフトウェア研究発表会 口頭発表 <br></br>
             </p>
             <p>趣味：スマブラ，スノボ🏂，ボウリング🎳，数学</p>
           </div>
