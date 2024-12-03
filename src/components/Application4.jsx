@@ -88,7 +88,7 @@ const Application4 = () => {
               >
                 理研サイト
                 <br />
-                Q-Portal掲載作品
+                Q-Portal 掲載作品
               </div>
             </div>
           </div>
