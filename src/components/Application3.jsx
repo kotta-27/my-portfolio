@@ -79,12 +79,45 @@ const Application3 = () => {
             shadow="true"
           />
         </a>
-        <div className="flex items-center justify-center py-3 text-center">
+        <div className="flex-col items-center justify-center py-3 text-center">
           フロントエンド：React，バックエンド：Python<br></br>
           ユーザ入力からキーワードを受け取り，それにあった内容のスレッドを自動生成します．
           <br />
           生成モデルにはClaude 3 HaikuとStable
           Diffusionを用い，その制御にはAmazon Bedrockを用いました．
+          <br />
+          <br />
+          ブログ記事はこちらから ↓<br />
+          <a
+            href="https://aws.amazon.com/jp/blogs/startup/progate-hackathon-powered-by-aws-2024/"
+            style={{
+              color: "#00A8FF",
+              textDecoration: "underline",
+              transition: "color 0.3s",
+              ":hover": {
+                color: "#AAA5FF",
+              },
+            }}
+          >
+            https://aws.amazon.com/jp/blogs/startup/progate-hackathon-powered-by-aws-2024/
+          </a>
+          <br /><br />
+          このプロダクトのシステム構成(topaz) ↓<br />
+          <a
+            href="https://topaz.dev/projects/c2b70f218e31d6ed65d6"
+            style={{
+              color: "#00A8FF",
+              textDecoration: "underline",
+              transition: "color 0.3s",
+              ":hover": {
+                color: "#AAA5FF",
+              },
+            }}
+          >
+            https://topaz.dev/projects/c2b70f218e31d6ed65d6
+          </a>
+
+          
         </div>
         <div className="flex justify-end">
           {" "}

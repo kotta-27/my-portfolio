@@ -142,7 +142,20 @@ const About = () => {
               2024/8〜：量子ICT人材育成プログラムNQC 参加 <br />
               2024/9〜：株式会社スタディスト ソフトウェアエンジニアインターン{" "}
               <br />
-              2024/10〜：株式会社Jij インターン
+              2024/10〜：株式会社Jij インターン{"  "}
+              <a
+                href="https://www.j-ij.com/ja/recruit/interview-mizuno"
+                style={{
+                  color: "#0077FF",
+                  textDecoration: "underline",
+                  transition: "color 0.3s",
+                  ":hover": {
+                    color: "#AAA5FF",
+                  },
+                }}
+              >
+                インタビュー記事はこちら
+              </a>
               <br></br>
               <br></br>[ 実績 ] <br></br>
               2024/5：量子コンピューティング公開伴送型生配信授業「QC4U2」GroupWork

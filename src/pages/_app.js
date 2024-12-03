@@ -33,13 +33,13 @@ const WelcomeAnimation = () => {
       y: 0,
       transition: {
         type: "spring",
-        damping: 12,
+        damping: 10,
         stiffness: 200,
       },
     },
     exit: {
       opacity: 0,
-      y: -20,
+      y: -100,
       transition: {
         type: "tween",
         ease: "easeInOut",
@@ -62,7 +62,7 @@ const WelcomeAnimation = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: "linear-gradient(45deg, #00DBDE 0%, #FC00FF 100%)",
+        background: "linear-gradient(45deg, #0000DE 0%, #000066 100%)",
         zIndex: 9999,
       }}
     >
@@ -74,8 +74,8 @@ const WelcomeAnimation = () => {
             display: "inline-block",
             fontSize: "5rem",
             fontWeight: "bold",
-            color: "#ff0",
-            fontFamily: "Roboto Condensed",
+            color: "#AAA",
+            fontFamily: "Caveat",
             textShadow: "2px 2px 8px rgba(0,0,0,0.1)",
           }}
         >
