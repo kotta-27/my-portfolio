@@ -121,6 +121,7 @@ const Application4 = () => {
             href="https://x.com/Q_Portal_/status/1861987301041275218"
             style={{
               color: "#00A8FF",
+              wordWrap: "break-word",
               textDecoration: "underline",
               transition: "color 0.3s",
               ":hover": {

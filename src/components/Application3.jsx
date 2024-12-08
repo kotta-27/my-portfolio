@@ -92,6 +92,7 @@ const Application3 = () => {
             href="https://aws.amazon.com/jp/blogs/startup/progate-hackathon-powered-by-aws-2024/"
             style={{
               color: "#00A8FF",
+              wordWrap: "break-word",
               textDecoration: "underline",
               transition: "color 0.3s",
               ":hover": {
@@ -107,6 +108,7 @@ const Application3 = () => {
             href="https://topaz.dev/projects/c2b70f218e31d6ed65d6"
             style={{
               color: "#00A8FF",
+              wordWrap: "break-word",
               textDecoration: "underline",
               transition: "color 0.3s",
               ":hover": {

@@ -365,7 +365,11 @@ hr {
 }
 
 .skills-container .grid-skills .flutter:hover {
-  background-color: #fd3cd6;
+  background-color: #3c73fd;
+}
+
+.skills-container .grid-skills .ruby:hover {
+  background-color: #f34f29;
 }
 
 /* Application */
