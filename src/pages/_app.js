@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "@/styles/globals.css";
 import Layout from "../components/Layout";
+import { useRouter } from "next/router";
 
 const WelcomeAnimation = () => {
   const text = "Welcome!";
@@ -74,7 +75,7 @@ const WelcomeAnimation = () => {
             display: "inline-block",
             fontSize: "5rem",
             fontWeight: "bold",
-            color: "#AAA",
+            color: "#CCC",
             fontFamily: "Caveat",
             textShadow: "2px 2px 8px rgba(0,0,0,0.1)",
           }}
@@ -88,14 +89,22 @@ const WelcomeAnimation = () => {
 
 export default function App({ Component, pageProps }) {
   const [showWelcome, setShowWelcome] = useState(true);
+  const router = useRouter();
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowWelcome(false);
-    }, 2000); // 3秒後にウェルカム画面を非表示にする
+    }, 2000); // 2秒後にウェルカム画面を非表示にする
 
     return () => clearTimeout(timer);
   }, []);
+
+  // ページ遷移用のアニメーション設定
+  const pageVariants = {
+    hidden: { opacity: 0, x: 100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+    exit: { opacity: 1.0, x: -100, transition: { duration: 0.5 } },
+  };
 
   return (
     <AnimatePresence mode="wait">
@@ -103,7 +112,16 @@ export default function App({ Component, pageProps }) {
         <WelcomeAnimation key="welcome" />
       ) : (
         <Layout key="main">
-          <Component {...pageProps} />
+          <motion.div
+            key={router.route}
+            variants={pageVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            style={{ position: "relative", width: "100%" }}
+          >
+            <Component {...pageProps} />
+          </motion.div>
         </Layout>
       )}
     </AnimatePresence>

@@ -73,7 +73,6 @@ const About = () => {
                 : "opacity-0 translate-x-full"
             }`}
           >
-            {/* Content remains unchanged */}
             <p>
               <span className="about-my-name">Kota Mizuno / 水野 航太</span>
             </p>

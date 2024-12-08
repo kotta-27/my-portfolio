@@ -53,7 +53,7 @@ const Application4 = () => {
           </div>
           {/* バナー1 */}
           <div className="w-full sm:w-1/3 flex justify-end">
-            <div className="w-1/2 h-4/6 flex justify-end">
+            <div className="w-1/2 flex justify-end" style={{ height: "80px" }}>
               <div
                 className="px-2 py-5 rounded-lg font-bold text-sm text-center duration-300 ease-in-out shadow-lg mt-4 sm:mt-0"
                 style={{
@@ -72,9 +72,9 @@ const Application4 = () => {
                 展示作品
               </div>
             </div>
-            <div className="w-1/2 h-4/6 flex justify-end">
+            <div className="w-1/2 flex justify-end" style={{ height: "80px" }}>
               <div
-                className="px-2 py-6 rounded-lg font-bold text-sm text-center duration-300 ease-in-out shadow-lg mt-4 sm:mt-0"
+                className="px-2 py-5 rounded-lg font-bold text-sm text-center duration-300 ease-in-out shadow-lg mt-4 sm:mt-0"
                 style={{
                   background: "linear-gradient(135deg, #0044FF, #7766FF)",
                   color: "#fff",

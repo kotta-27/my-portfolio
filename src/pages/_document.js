@@ -61,6 +61,10 @@ export default function Document() {
           name="google-site-verification"
           content="Tbiw4HEy5H_jcbsJBpsMZKTFcb6L1LCoWdKMkYiKUZI"
         />
+        <script
+          src="https://kit.fontawesome.com/e64ae804d4.js"
+          crossorigin="anonymous"
+        ></script>
       </Head>
       <body>
         <Main />

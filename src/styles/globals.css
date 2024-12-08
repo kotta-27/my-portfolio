@@ -156,7 +156,7 @@ hr {
 .hero-container .profile-img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 5cqmax;
   margin: 0 auto;
   object-fit: cover;
 }

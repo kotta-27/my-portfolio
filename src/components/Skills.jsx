@@ -81,14 +81,19 @@ const Skills = () => {
             <p>Python</p>
           </div>
           <div className="skill-card java">
-            <i className="fa-brands fa-java java-icon"></i>
+            <i className="fa-brands fa-java"></i>
             <p>Java</p>
           </div>
           <div className="skill-card c">
             <p>C / C++</p>
           </div>
           <div className="skill-card flutter">
+            <i className="fa-brands fa-flutter"></i>
             <p>flutter(勉強中)</p>
+          </div>
+          <div className="skill-card ruby">
+            {/* <i className="fa-brands fa-ruby ruby-icon"></i> */}
+            <p>Ruby</p>
           </div>
         </div>
       </div>
