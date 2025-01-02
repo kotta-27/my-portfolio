@@ -8,6 +8,7 @@ const About = () => {
     content: false,
     image: false,
   });
+  const [isExpanded, setIsExpanded] = useState(false);
   const titleRef = useRef(null);
   const contentRef = useRef(null);
   const imageRef = useRef(null);
@@ -46,6 +47,10 @@ const About = () => {
       if (imageRef.current) observer.unobserve(imageRef.current);
     };
   }, []);
+
+  const handleToggle = () => {
+    setIsExpanded((prev) => !prev);
+  };
 
   const underlineStyle = {
     position: "absolute",
@@ -172,7 +177,19 @@ const About = () => {
               2024/6：Progateハッカソン powered by AWS 最優秀賞 <br></br>
               2024/10：量子アニーリング国際ネットワークINQA2024国際会議
               ポスター発表 <br></br>
-              2024/10：Quantum Innovation2024 ポスターセッション発表 <br></br>
+              2024/10：Quantum Innovation2024 ポスターセッション発表
+              <button onClick={handleToggle}>
+                <div className="handle-toggle-button">!!!!</div>
+              </button>
+              <br></br>
+              {isExpanded && (
+                <div className="award-container">
+                  <p>
+                    このセッションで"Poster Presentation Award for Young Researcher"を受賞しました！ 🎉 <br />
+                    <img src="qi2.png" alt="award" className="award-img" width={"500px"} />
+                  </p>
+                </div>
+              )}
               2024/10：第13回量子ソフトウェア研究発表会 口頭発表 <br></br>
             </p>
             <p>趣味：スマブラ，スノボ🏂，ボウリング🎳，数学</p>

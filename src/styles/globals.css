@@ -268,6 +268,36 @@ hr {
   transform: scale(1.02);
 }
 
+.handle-toggle-button
+{
+  background-color: #FFCC1A;
+  color: #1D1E20;
+  width: 100px;
+  height: 1.2rem;
+  margin-top: 3px;
+  margin-left: 10px;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  /* display: inline-block; */
+}
+
+.award-container{
+  margin-top: 7px;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.award-container p{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 @media screen and (max-width: 768px) {
   .about-container .flex-about {
     flex-direction: column;
@@ -334,42 +364,63 @@ hr {
 
 .skills-container .grid-skills .html:hover {
   background-color: #E34F26;
+  transform: scale(1.05);
+  color: white;
 }
 
 .skills-container .grid-skills .css:hover {
   background-color: #264DE4;
+  transform: scale(1.05);
+  color: white;
 }
 
 .skills-container .grid-skills .js:hover {
-  background-color: #F7DF1E;
+  background-color: #d4bb00;
+  transform: scale(1.05);
+  color: white;
 }
 
 .skills-container .grid-skills .react:hover {
   background-color: #61DAFB;
+  transform: scale(1.05);
+  color: white;
 }
+
 
 .skills-container .grid-skills .node:hover {
   background-color: #339933;
+  transform: scale(1.05);
+  color: white;
 }
 
 .skills-container .grid-skills .python:hover {
   background-color: #3776AB;
+  transform: scale(1.05);
+  color: white;
 }
 
 .skills-container .grid-skills .java:hover {
   background-color: #ef7000;
+  transform: scale(1.05);
+  color: white;
 }
 
 .skills-container .grid-skills .c:hover {
   background-color: #3cfda6;
+  transform: scale(1.05);
+  color: white;
 }
 
 .skills-container .grid-skills .flutter:hover {
   background-color: #3c73fd;
+  transform: scale(1.05);
+  color: white;
 }
 
 .skills-container .grid-skills .ruby:hover {
   background-color: #f34f29;
+  transform: scale(1.05);
+  color: white;
 }
 
 /* Application */
