@@ -277,16 +277,27 @@ hr {
   margin-top: 3px;
   margin-left: 10px;
   border-radius: 5px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
   /* display: inline-block; */
 }
 
+.handle-toggle-button:hover
+{
+  background-color: #ffe27b;
+  transform: scale(1.08);
+}
+
+
 .award-container{
+  width: 100%;
   margin-top: 7px;
   background-color: aliceblue;
   color: black;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
 }
 
@@ -295,6 +306,38 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.award-container .award-name{
+text-decoration: underline;
+text-decoration-color: rgb(6, 188, 0);
+}
+
+.award-container a{
+  margin-top: 10px;
+  background-color: rgb(6, 188, 0);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.award-container a:hover{
+  background-color: rgb(0, 128, 0);
+  transform: scale(1.05);
+}
+
+.award-img-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.award-container .award-img{
+  width: 40%;
 }
 
 
@@ -354,8 +397,9 @@ hr {
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: context-menu;
+  box-shadow: #cbc0c0 0px 0px 5px;
 }
 
 .skills-container .grid-skills i {
@@ -418,7 +462,7 @@ hr {
 }
 
 .skills-container .grid-skills .ruby:hover {
-  background-color: #f34f29;
+  background-color: #f32929;
   transform: scale(1.05);
   color: white;
 }
