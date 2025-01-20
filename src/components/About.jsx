@@ -185,8 +185,11 @@ const About = () => {
               {isExpanded && (
                 <div className="award-container">
                   <p>
-                    このセッションで<span className="award-name">"Poster Presentation Award for Young
-                    Researcher"</span>を受賞しました！ 🎉 <br />
+                    このセッションで
+                    <span className="award-name">
+                      "Poster Presentation Award for Young Researcher"
+                    </span>
+                    を受賞しました！ 🎉 <br />
                     <div className="award-img-container">
                       <img
                         src="me_and_poster.jpg"
@@ -195,7 +198,10 @@ const About = () => {
                         // width={"100px"}
                       />
                     </div>
-                    <a href="https://www.shibaura-it.ac.jp/headline/award/20250117_7070_002.html" target="_blank">
+                    <a
+                      href="https://www.shibaura-it.ac.jp/headline/award/20250117_7070_002.html"
+                      target="_blank"
+                    >
                       大学の広報記事
                     </a>
                   </p>
