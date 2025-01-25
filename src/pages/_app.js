@@ -2,50 +2,42 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "@/styles/globals.css";
+import "./globals.css"
 import Layout from "../components/Layout";
 import { useRouter } from "next/router";
 
 const WelcomeAnimation = () => {
-  const text = "Welcome!";
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.3,
+        duration: 1.5,
       },
     },
     exit: {
       opacity: 0,
       transition: {
-        staggerChildren: 0.05,
-        staggerDirection: -1,
-        when: "afterChildren",
+        duration: 1,
       },
     },
   };
 
-  const letterVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "spring",
-        damping: 10,
-        stiffness: 200,
-      },
-    },
-    exit: {
-      opacity: 0,
-      y: -100,
-      transition: {
-        type: "tween",
-        ease: "easeInOut",
-      },
-    },
+  const sphereStyle = {
+    width: '100px',
+    height: '100px',
+    borderRadius: '50%',
+    background: 'radial-gradient(circle at top left, #007bff 0%, #000066 100%)',
+    boxShadow: 'inset -5px -5px 15px rgba(0, 0, 0, 0.3), inset 5px 5px 15px rgba(0, 123, 255, 0.3), 0 0 30px rgba(0, 123, 255, 0.9), 0 8px 80px rgba(0, 123, 255, 0.6)',
+    animation: 'rotateSphere 6s linear infinite',
+  };
+
+  const loadingTextStyle = {
+    fontSize: '1.5rem',
+    fontWeight: 'bold',
+    color: '#fff',
+    marginTop: '20px',
+    fontFamily: 'sans-serif',
   };
 
   return (
@@ -63,26 +55,13 @@ const WelcomeAnimation = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: "linear-gradient(45deg, #0000DE 0%, #000066 100%)",
+        flexDirection: 'column',
+        background: "#000033",
         zIndex: 9999,
       }}
     >
-      {text.split("").map((char, index) => (
-        <motion.span
-          key={`${char}-${index}`}
-          variants={letterVariants}
-          style={{
-            display: "inline-block",
-            fontSize: "5rem",
-            fontWeight: "bold",
-            color: "#CCC",
-            fontFamily: "Caveat",
-            textShadow: "2px 2px 8px rgba(0,0,0,0.1)",
-          }}
-        >
-          {char}
-        </motion.span>
-      ))}
+      <motion.div style={sphereStyle} />
+      <motion.p style={loadingTextStyle}>Loading...</motion.p>
     </motion.div>
   );
 };

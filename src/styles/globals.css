@@ -289,16 +289,22 @@ hr {
 }
 
 
-.award-container{
+.award-container {
   width: 100%;
   margin-top: 7px;
   background-color: aliceblue;
   color: black;
   border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.award-container-collapsed {
+  height: 0;
+}
+
+.award-container-expanded {
+  height: auto; /* Or a specific height if you know the maximum */
 }
 
 .award-container p{

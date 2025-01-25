@@ -182,8 +182,10 @@ const About = () => {
                 <div className="handle-toggle-button">!!!!</div>
               </button>
               <br></br>
-              {isExpanded && (
-                <div className="award-container">
+              <div className={`award-container ${
+                  isExpanded ? 'award-container-expanded' : 'award-container-collapsed'
+                }`}>
+                {isExpanded && (
                   <p>
                     このセッションで
                     <span className="award-name">
@@ -205,8 +207,8 @@ const About = () => {
                       大学の広報記事
                     </a>
                   </p>
-                </div>
-              )}
+                )}
+              </div>
               2024/10：第13回量子ソフトウェア研究発表会 口頭発表 <br></br>
             </p>
             <p>趣味：スマブラ，スノボ🏂，ボウリング🎳，数学</p>
