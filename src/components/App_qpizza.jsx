@@ -44,8 +44,7 @@ const App_qpizza = () => {
 
   return (
     <div>
-      <ApplicationTitle myTitle={"Applications"} />
-      <div className="justify-center border p-3 bg-gray-900 text-white">
+      <div className="justify-center border p-3 bg-gray-900 text-white mt-20">
         <div className="relative flex flex-col sm:flex-row items-center mb-6">
           <div className="w-full sm:w-1/3" />
           <div className="text-2xl font-bold underline py-2 my-5 sm:my-0 w-full sm:w-1/3 text-center">

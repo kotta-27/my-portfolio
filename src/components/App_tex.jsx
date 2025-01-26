@@ -53,7 +53,7 @@ const App_tex = () => {
           </div>
         </div>
 
-        <a href="" target="_blank">
+        <a href="https://img2tex-app.vercel.app/" target="_blank">
           <img
             src="/texapp.png"
             alt="Quantum Circuit Simulator Application"

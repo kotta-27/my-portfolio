@@ -19,30 +19,30 @@ const Projects = () => {
                 className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col"
                 key={project.id}
               >
-                <div>
+                <div className="p-3">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-cover shadow translate scale-on-hover-app"
                   />
                 </div>
                 <div className="px-4 py-2">
-                  <div className="flex items-center bg-gray-100 rounded">
+                  <div className="flex items-center bg-gray-100 rounded border border-gray-400">
                     <i className="fa-regular fa-folder-open text-gray-500 py-2 px-2"></i>
                     {project.langs.map((lang) => (
                       <i
                         key={lang}
-                        className={`fa-brands fa-${lang} text-3xl py-2 px-1`}
+                        className={`fa-brands fa-${lang} text-3xl py-2 px-1 text-gray-800 ml-6`}
                       ></i>
                     ))}
                     {/* GitHub link with Tailwind styles */}
                     <a href={project.gitHubLink} className="ml-auto">
-                      <i className="fa-brands fa-github text-3xl py-2 px-2 hover:text-gray-700 transition-colors duration-200"></i>
+                      <i className="fa-brands fa-github text-3xl py-2 px-2 text-gray-700 hover:text-gray-300 transition-colors duration-300"></i>
                     </a>
                   </div>
                 </div>
                 <div className="p-4 flex-grow">
-                  <h3 className="font-bold underline text-lg mb-2">
+                  <h3 className="font-bold underline text-lg mb-2 text-gray-800">
                     {project.title}
                   </h3>
                   <p className="text-gray-700 text-sm">
