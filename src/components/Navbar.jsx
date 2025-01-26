@@ -43,8 +43,8 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 w-full bg-zinc-800 z-50 border-b border-zinc-700 transition-all
-      duration-300 ${isTransparent ? "opacity-40" : "opacity-100"
-      }`}>
+      duration-300 hover:opacity-100 ${isTransparent ? "opacity-40" : "opacity-100"
+      }  ${isOpen ? "opacity-0" : ""} `}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-2/3">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center justify-between sm:items-stretch sm:justify-start">
