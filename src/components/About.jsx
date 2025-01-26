@@ -70,7 +70,7 @@ const About = () => {
                 <a
                   href="http://watabegroup.quie.ise.shibaura-it.ac.jp/"
                   target="_blank"
-                  className="text-blue-500 transition-colors duration-300 hover:text-blue-700 underline"
+                  className="text-blue-500 transition-colors duration-300 hover:text-blue-200 underline"
                 >
                   量子情報工学研究室
                 </a>

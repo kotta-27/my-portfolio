@@ -42,20 +42,22 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-zinc-800 z-50 border-b border-zinc-700 transition-all duration-300">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <nav className={`fixed top-0 left-0 w-full bg-zinc-800 z-50 border-b border-zinc-700 transition-all
+      duration-300 ${isTransparent ? "opacity-40" : "opacity-100"
+      }`}>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-2/3">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center justify-between sm:items-stretch sm:justify-start">
             <div className="flex items-center">
               <a
                 href="/"
-                className={`text-3xl font-bold text-white ${
-                  isTransparent ? "opacity-30" : "opacity-100"
-                }`}
+                className={`text-3xl font-bold text-white `}
                 onClick={scrollToTop}
               >
                 Kota's Portfolio
               </a>
+            </div>
+            <div className="ml-10 border-l border-gray-600 w-5">
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
@@ -63,7 +65,7 @@ const Navbar = () => {
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}-name`}
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white hover:underline"
                     onClick={(e) =>
                       scrollToSection(e, `#${item.toLowerCase()}-name`)
                     }
