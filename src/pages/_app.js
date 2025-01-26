@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "@/styles/globals.css";
-import "./globals.css"
 import Layout from "../components/Layout";
 import { useRouter } from "next/router";
 

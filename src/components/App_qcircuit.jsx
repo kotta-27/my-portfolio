@@ -1,6 +1,6 @@
 import React from "react";
 
-const Application = () => {
+const App_qcircuit = () => {
   return (
     <div>
       {/* <div className="about-container">
@@ -51,4 +51,4 @@ const Application = () => {
   );
 };
 
-export default Application;
+export default App_qcircuit;

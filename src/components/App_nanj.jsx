@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const Application3 = () => {
+const App_nanj = () => {
   const [isTitleVisible, setIsTitleVisible] = useState(false);
   const titleRef = useRef(null);
 
@@ -62,7 +62,7 @@ const Application3 = () => {
                   "0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)",
               }}
             >
-              Progate×AWS
+              第2回 Progate×AWS
               <br />
               ハッカソン最優秀賞作品
             </div>
@@ -139,4 +139,4 @@ const Application3 = () => {
   );
 };
 
-export default Application3;
+export default App_nanj;

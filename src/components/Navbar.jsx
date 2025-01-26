@@ -29,8 +29,7 @@ const Navbar = () => {
     e.preventDefault();
     const section = document.querySelector(sectionId);
     if (section) {
-      const navbarHeight =
-        document.querySelector(".nav-container").offsetHeight;
+      const navbarHeight = document.querySelector("nav").offsetHeight;
       const targetPosition =
         section.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
 
@@ -43,51 +42,51 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className={`nav-container ${
-        isTransparent ? "bg-opacity-50" : ""
-      } transition-all duration-300`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className={`flex items-center `}>
-            <a
-              href="/"
-              className={`nav-name text-2xl sm:text-3xl font-custom text-white 
-              ${isTransparent ? "text-alpha" : ""}`}
-              onClick={scrollToTop}
-            >
-              Kota's Portfolio
-            </a>
-          </div>
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              {["About", "Skills", "Applications", "Projects"].map((item) => (
-                <a
-                  key={item}
-                  href={`#${item.toLowerCase()}-name`}
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-500"
-                  onClick={(e) =>
-                    scrollToSection(e, `#${item.toLowerCase()}-name`)
-                  }
-                >
-                  {item}
-                </a>
-              ))}
+    <nav className="fixed top-0 left-0 w-full bg-zinc-800 z-50 border-b border-zinc-700 transition-all duration-300">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="relative flex h-16 items-center justify-between">
+          <div className="flex flex-1 items-center justify-between sm:items-stretch sm:justify-start">
+            <div className="flex items-center">
+              <a
+                href="/"
+                className={`text-3xl font-bold text-white ${
+                  isTransparent ? "opacity-30" : "opacity-100"
+                }`}
+                onClick={scrollToTop}
+              >
+                Kota's Portfolio
+              </a>
+            </div>
+            <div className="hidden sm:ml-6 sm:block">
+              <div className="flex space-x-4">
+                {["About", "Skills", "Applications", "Projects"].map((item) => (
+                  <a
+                    key={item}
+                    href={`#${item.toLowerCase()}-name`}
+                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                    onClick={(e) =>
+                      scrollToSection(e, `#${item.toLowerCase()}-name`)
+                    }
+                  >
+                    {item}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
-          <div className="-mr-2 flex md:hidden">
+          <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+            {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="ml-3 bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="inline-flex items-center justify-center rounded-md p-2 text-zinc-400 hover:bg-zinc-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
               {!isOpen ? (
                 <svg
-                  className="block h-6 w-6"
+                  className="h-6 w-6 block"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -103,7 +102,7 @@ const Navbar = () => {
                 </svg>
               ) : (
                 <svg
-                  className="block h-6 w-6"
+                  className="h-6 w-6 block"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -123,14 +122,15 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile menu, show/hide based on menu state. */}
       {isOpen && (
-        <div className="md:hidden" id="mobile-menu">
-          <div className="px-2 pt-20 pb-3 space-y-1 sm:px-3">
+        <div className="sm:hidden" id="mobile-menu">
+          <div className="space-y-1 px-2 pt-2 pb-3">
             {["About", "Skills", "Applications", "Projects"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}-name`}
-                className="bg-blue-500 hover:bg-blue-700 text-white block px-3 py-2 rounded-md font-medium mobile-name"
+                className="block rounded-md px-3 py-2 text-base font-medium text-white bg-zinc-900"
                 onClick={(e) =>
                   scrollToSection(e, `#${item.toLowerCase()}-name`)
                 }

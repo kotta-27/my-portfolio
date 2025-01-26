@@ -4,7 +4,7 @@ export const projectData = [
   {
     id: 1,
     title: "Todo List App",
-    image: "todoapp2.png",
+    image: "/todoapp2.png",
     langs: ["react"],
     description:
       "シンプルなTO-DOアプリで，next.jsを用いて作成．jsonのサーバはローカル上で動作するライブラリであるjson-serverを用いて，モダンCSSフレームワークであるtailwindも使用．",
@@ -13,7 +13,7 @@ export const projectData = [
   {
     id: 2,
     title: "Shift Management App",
-    image: "shiftapp.png",
+    image: "/shiftapp.png",
     langs: ["python", "js"],
     description:
       "高度情報演習1Bの授業の開発として作成．PythonのWebアプリケーションフレームワークであるdjangoを用いてシフト管理アプリを作成．カレンダーはJavaScriptで制御し，従業員同士のチャット機能も実装．",
@@ -22,7 +22,7 @@ export const projectData = [
   {
     id: 3,
     title: "Quantum Circuit Simulator",
-    image: "tkapp.png",
+    image: "/tkapp.png",
     langs: ["python"],
 
     description:
@@ -32,7 +32,7 @@ export const projectData = [
   {
     id: 4,
     title: "Assignment Management App",
-    image: "assapp.png",
+    image: "/assapp.png",
     langs: ["java"],
 
     description:
@@ -42,7 +42,7 @@ export const projectData = [
   {
     id: 5,
     title: "Block-Devided Pointing App",
-    image: "pointapp.png",
+    image: "/pointapp.png",
     langs: ["unity"],
 
     description:
@@ -52,7 +52,7 @@ export const projectData = [
   {
     id: 6,
     title: "Bingo App",
-    image: "bingoapp.png",
+    image: "/bingoapp.png",
     langs: ["react"],
 
     description:

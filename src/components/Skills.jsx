@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import Application from "./Application";
+import Application from "./App_qcircuit";
 import ApplicationTitle from "./ApplicationTitle";
 
 const Skills = () => {

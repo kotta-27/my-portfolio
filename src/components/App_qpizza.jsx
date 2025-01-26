@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import ApplicationTitle from "./ApplicationTitle";
 
-const Application4 = () => {
+const App_qpizza = () => {
   const [isTitleVisible, setIsTitleVisible] = useState(false);
   const titleRef = useRef(null);
 
@@ -147,4 +147,4 @@ const Application4 = () => {
   );
 };
 
-export default Application4;
+export default App_qpizza;

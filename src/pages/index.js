@@ -3,12 +3,13 @@
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Skills from "../components/Skills";
-import Application from "@/components/Application";
-import Application2 from "@/components/Application2";
+import App_qcircuit from "@/components/App_qcircuit";
+import App_qual from "@/components/App_qual";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
-import Application3 from "@/components/Application3";
-import Application4 from "@/components/Application4";
+import App_nanj from "@/components/App_nanj";
+import App_qpizza from "@/components/App_qpizza";
+import App_tex from "@/components/App_tex";
 
 // import Head from 'next/head';
 
@@ -19,10 +20,11 @@ const Home = () => {
         {/* <Hero /> */}
         <About />
         <Skills />
-        <Application4 />
-        <Application3 />
-        <Application />
-        <Application2 />
+        <App_tex />
+        <App_qpizza />
+        <App_nanj />
+        <App_qcircuit />
+        <App_qual />
         <Projects />
         <Contact />
       </div>

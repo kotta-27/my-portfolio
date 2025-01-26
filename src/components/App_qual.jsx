@@ -1,6 +1,6 @@
 import React from "react";
 
-const Application2 = () => {
+const App_qual = () => {
   return (
     <div>
       <div className="about-container"></div>
@@ -58,4 +58,4 @@ const Application2 = () => {
   );
 };
 
-export default Application2;
+export default App_qual;
