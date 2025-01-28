@@ -52,9 +52,8 @@ const ApplicationTitle = ({ myTitle }) => {
       <div></div>
       <div
         ref={titleRef}
-        className={`relative inline-block font-bold transition-all duration-1000 ease-out ${
-          isTitleVisible ? "opacity-100" : "opacity-0"
-        }`}
+        className={`relative inline-block font-bold transition-all duration-1000 ease-out ${isTitleVisible ? "opacity-100" : "opacity-0"
+          }`}
       >
         <h2
           className="text-2xl sm:text-4xl mb-2"
@@ -63,11 +62,10 @@ const ApplicationTitle = ({ myTitle }) => {
           {myTitle.split("").map((char, index) => (
             <span
               key={index}
-              className={`inline-block transition-all duration-300 transform ${
-                isTitleVisible
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-full opacity-0"
-              } hover:scale-110 ${index === 0 ? titleColorClass : ""}`}
+              className={`inline-block transition-all duration-300 transform ${isTitleVisible
+                ? "translate-y-0 opacity-100"
+                : "translate-y-full opacity-0"
+                } hover:scale-110 ${index === 0 ? titleColorClass : ""}`}
               style={{ transitionDelay: `${index * 50}ms` }}
             >
               {char}

@@ -41,66 +41,6 @@ li {
   list-style: none;
 }
 
-/* Navbar */
-.nav-container {
-  width: 85%;
-  display: flex;
-  /* justify-content: space-between; */
-  position: fixed;
-  height: 80px;
-  align-items: center;
-  padding: 3rem 4rem;
-  background-color: #1c1c1c;
-  z-index: 1000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4)
-}
-
-.nav-container.bg-opacity-50 {
-  background-color: rgba(28, 28, 28, 0.5); /* Semi-transparent background */
-}
-
-.nav-container .nav-name{
-  margin-top: 10px;
-  font-size: 3rem;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-.nav-container .logo {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.text-alpha {
-  font-size: 3rem;
-  color: rgba(255, 255, 255, 0.3);
-  font-weight: bold;
-}
-
-.mobile-name{
-  font-size: 10px;
-}
-
-.link-container{
-  margin-left: auto;
-  display: flex;
-}
-
-.cta-btn {
-  background-color: #FFCC1A;
-  color: #1D1E20;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
-  display: inline-block;
-}
-
-.cta-btn:hover {
-  background-color: #DADADB;
-}
-
 /* Footer */
 hr {
   border: none;
@@ -418,62 +358,62 @@ text-decoration-color: rgb(6, 188, 0);
 
 .skills-container .grid-skills .html:hover {
   background-color: #E34F26;
-  transform: scale(1.05);
+  transform: scale(1.02);
   color: white;
 }
 
 .skills-container .grid-skills .css:hover {
   background-color: #264DE4;
-  transform: scale(1.05);
+  transform: scale(1.02);
   color: white;
 }
 
 .skills-container .grid-skills .js:hover {
   background-color: #d4bb00;
-  transform: scale(1.05);
+  transform: scale(1.02);
   color: white;
 }
 
 .skills-container .grid-skills .react:hover {
   background-color: #61DAFB;
-  transform: scale(1.05);
+  transform: scale(1.02);
   color: white;
 }
 
 
 .skills-container .grid-skills .node:hover {
   background-color: #339933;
-  transform: scale(1.05);
+  transform: scale(1.02);
   color: white;
 }
 
 .skills-container .grid-skills .python:hover {
   background-color: #3776AB;
-  transform: scale(1.05);
+  transform: scale(1.02);
   color: white;
 }
 
 .skills-container .grid-skills .java:hover {
   background-color: #ef7000;
-  transform: scale(1.05);
+  transform: scale(1.02);
   color: white;
 }
 
 .skills-container .grid-skills .c:hover {
   background-color: #3cfda6;
-  transform: scale(1.05);
+  transform: scale(1.02);
   color: white;
 }
 
 .skills-container .grid-skills .flutter:hover {
   background-color: #3c73fd;
-  transform: scale(1.05);
+  transform: scale(1.02);
   color: white;
 }
 
 .skills-container .grid-skills .ruby:hover {
   background-color: #f32929;
-  transform: scale(1.05);
+  transform: scale(1.02);
   color: white;
 }
 

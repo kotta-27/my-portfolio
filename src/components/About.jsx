@@ -61,7 +61,7 @@ const About = () => {
                 }`}
             >
               <p className="mb-4">
-                <span className="text-xl font-bold">Kota Mizuno / 水野 航太</span>
+                <span className="text-3xl font-bold font-myName">Kota Mizuno / 水野 航太</span>
               </p>
               <p className="mb-4">
                 芝浦工業大学大学院 理工学研究科 電気・電子情報工学専攻 M1
@@ -76,12 +76,21 @@ const About = () => {
                 </a>
                 に配属．
               </p>
-              <p className="mb-4">
+              <div className="mb-4">
                 出身：東京
-              </p>
-              <p className="mb-4">
+              </div>
+              <div className="mb-4">
                 趣味：レゴ，ゲーム，カラオケ，スノボ，ボウリング，ダーツ
-              </p>
+              </div>
+              <div>
+                好きなゲーム：<br />
+                <ol className="ml-5">
+                  <li>・ スマブラ（ネス）</li>
+                  <li>・ ブロスタ</li>
+                  <li>・ クラロワ</li>
+                  <li>・ LOL（ワイルドリフト）</li>
+                </ol>
+              </div>
 
             </div>
             <div

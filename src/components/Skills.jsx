@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import Application from "./App_qcircuit";
 import ApplicationTitle from "./ApplicationTitle";
 
 const Skills = () => {
-  const [isHoveredPython, setIsHoveredPython] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const titleRef = useRef(null);
 
@@ -31,27 +29,11 @@ const Skills = () => {
     };
   }, []);
 
-  const handleOverPython = () => setIsHoveredPython(true);
-  const handleLeavePython = () => setIsHoveredPython(false);
-
-  const underlineStyle = {
-    position: "absolute",
-    bottom: "-5px",
-    left: "0",
-    width: "100%",
-    height: "3px",
-    backgroundColor: "currentColor", // Tailwind's blue-300
-    transform: "scaleX(0)",
-    transformOrigin: "left",
-    transition: "transform 1.5s ease-out",
-  };
-
   return (
     <div>
       <div className="skills-container">
         <ApplicationTitle myTitle={"Skills"} />
         <div className="grid-skills">
-          {/* Skill cards remain unchanged */}
           <div className="skill-card html">
             <i className="fa-brands fa-html5 html-icon"></i>
             <p>HTML</p>
@@ -72,11 +54,7 @@ const Skills = () => {
             <i className="fa-brands fa-node-js node-icon"></i>
             <p>Node</p>
           </div>
-          <div
-            className="skill-card python"
-            onMouseOver={handleOverPython}
-            onMouseLeave={handleLeavePython}
-          >
+          <div className="skill-card python">
             <i className="fa-brands fa-python python-icon"></i>
             <p>Python</p>
           </div>
@@ -92,24 +70,10 @@ const Skills = () => {
             <p>flutter(勉強中)</p>
           </div>
           <div className="skill-card ruby">
-            {/* <i className="fa-brands fa-ruby ruby-icon"></i> */}
-            <p>Ruby</p>
+            <p>Ruby（Rails）</p>
           </div>
         </div>
       </div>
-      {/* {isHoveredPython && (
-        <div className="flex items-center justify-center">
-          <p className="bg-gray-200 px-8 py-2 text-black rounded-lg text-lg mx-4 ">
-            Qiksit
-          </p>
-          <p className="bg-gray-200 px-8 py-2 text-black rounded-lg text-lg mx-4">
-            Qutip
-          </p>
-          <p className="bg-gray-200 px-8 py-2 text-black rounded-lg text-lg mx-4">
-            Django
-          </p>
-        </div>
-      )} */}
     </div>
   );
 };
