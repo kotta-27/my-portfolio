@@ -71,7 +71,7 @@ const About = () => {
                 <a
                   href="http://watabegroup.quie.ise.shibaura-it.ac.jp/"
                   target="_blank"
-                  className="text-blue-500 transition-colors duration-300 hover:text-blue-200 underline"
+                  className="text-blue-500 transition-colors duration-300 hover:underline"
                 >
                   量子情報工学研究室（渡部研）
                 </a></p>
@@ -166,7 +166,7 @@ const About = () => {
                 」学生スタッフ <br />
                 2024/08〜：量子ICT人材育成プログラムNQC 参加 <br />
                 2024/09〜：株式会社スタディスト ソフトウェアエンジニアインターン{" "} <br />
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-&nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-&nbsp; &nbsp;
                 <a
                   href="https://www.j-ij.com/ja/recruit/interview-mizuno"
                   className="text-blue-500 underline hover:text-blue-200 transition-colors duration-300"
@@ -174,7 +174,7 @@ const About = () => {
                   インタビュー記事はこちら
                 </a> <br />
                 2024/10〜：株式会社Jij リサーチエンジニアインターン{"  "} <br />
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-&nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-&nbsp; &nbsp;
                 <a
                   href="https://www.j-ij.com/ja/recruit/interview-mizuno"
                   className="text-blue-500 underline hover:text-blue-200 transition-colors duration-300"
