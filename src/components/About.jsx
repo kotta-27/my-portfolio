@@ -60,26 +60,31 @@ const About = () => {
                 : "translate-x-full opacity-0"
                 }`}
             >
-              <p className="mb-4">
-                <span className="text-3xl font-bold font-myName">Kota Mizuno / 水野 航太</span>
+              <p className="mb-2">
+                <span className="text-2xl font-bold font-myName sm:text-3xl">Kota Mizuno / 水野 航太</span>
               </p>
+              <p className="border-t border-gray-500 w-5/6 mb-4" />
               <p className="mb-4">
                 芝浦工業大学大学院 理工学研究科 電気・電子情報工学専攻 M1
-                <br />
-                学部では情報工学を学び，4年次に
+              </p>
+              <p className="mb-2">研究室：
                 <a
                   href="http://watabegroup.quie.ise.shibaura-it.ac.jp/"
                   target="_blank"
                   className="text-blue-500 transition-colors duration-300 hover:text-blue-200 underline"
                 >
-                  量子情報工学研究室
-                </a>
-                に配属．
-              </p>
-              <div className="mb-4">
+                  量子情報工学研究室（渡部研）
+                </a></p>
+              <div className="mb-2">
                 出身：東京
               </div>
-              <div className="mb-4">
+              <p className="mb-2">
+                卒業研究：「許時間発展法を用いた励起状態探索の最短ベクトル問題への応用」
+              </p>
+              <p className="mb-2">
+                研究テーマ：格子暗号，量子アルゴリズム，数理最適化
+              </p>
+              {/* <div className="mb-4">
                 趣味：レゴ，ゲーム，カラオケ，スノボ，ボウリング，ダーツ
               </div>
               <div>
@@ -90,7 +95,7 @@ const About = () => {
                   <li>・ クラロワ</li>
                   <li>・ LOL（ワイルドリフト）</li>
                 </ol>
-              </div>
+              </div> */}
 
             </div>
             <div
@@ -228,7 +233,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

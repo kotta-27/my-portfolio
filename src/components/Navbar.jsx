@@ -65,7 +65,7 @@ const Navbar = () => {
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}-name`}
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white hover:underline"
+                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-400 hover:text-black hover:underline"
                     onClick={(e) =>
                       scrollToSection(e, `#${item.toLowerCase()}-name`)
                     }
