@@ -1,11 +1,13 @@
 // components/Contact.jsx
+import ApplicationTitle from "./ApplicationTitle";
+
 
 const Contact = () => {
   return (
-    <div className="contact-container">
-      <h2>Contact</h2>
-      <p> なんでも連絡下さい．</p>
-      <a href="mailto:al20013@shibaura-it.ac.jp" className="cta-btn">
+    <div className="mx-auto max-w-sm py-10 flex flex-col justify-center items-center">
+      <h2 className="contact-title"><span className="text-red-600">C</span>ontact</h2>
+      <p className="text-lg text-bold mb-5 "> なんでも連絡下さい．</p>
+      <a href="mailto:al20013@shibaura-it.ac.jp" className="bg-blue-500 px-5 py-2 text-bold rounded hover:bg-blue-700">
         Meil to:
       </a>
     </div>

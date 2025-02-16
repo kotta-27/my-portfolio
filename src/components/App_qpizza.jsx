@@ -2,48 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import ApplicationTitle from "./ApplicationTitle";
 
 const App_qpizza = () => {
-  const [isTitleVisible, setIsTitleVisible] = useState(false);
-  const titleRef = useRef(null);
-
-  useEffect(() => {
-    const observerOptions = {
-      threshold: 0.0,
-    };
-
-    const observerCallback = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setIsTitleVisible(true);
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(
-      observerCallback,
-      observerOptions
-    );
-
-    if (titleRef.current) observer.observe(titleRef.current);
-
-    return () => {
-      if (titleRef.current) observer.unobserve(titleRef.current);
-    };
-  }, []);
-
-  const underlineStyle = {
-    position: "absolute",
-    bottom: "-5px",
-    left: "0",
-    width: "100%",
-    height: "3px",
-    backgroundColor: "currentColor",
-    transform: "scaleX(0)",
-    transformOrigin: "left",
-    transition: "transform 1.5s ease-out",
-  };
-
   return (
-    <div>
+    <div className="mx-auto max-w-7xl">
       <div className="justify-center border p-3 bg-gray-900 text-white mt-20">
         <div className="relative flex flex-col sm:flex-row items-center mb-6">
           <div className="w-full sm:w-1/3" />

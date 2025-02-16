@@ -2,7 +2,7 @@ import React from "react";
 
 const App_qual = () => {
   return (
-    <div>
+    <div className="mx-auto max-w-7xl">
       <div className="justify-center border p-3 bg-gray-900 text-white mt-20">
         <div className="relative flex flex-col md:flex-row justify-center items-center mb-6">
           <div className="w-full sm:w-1/3" />

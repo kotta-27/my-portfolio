@@ -2,12 +2,7 @@ import React from "react";
 
 const App_qcircuit = () => {
   return (
-    <div>
-      {/* <div className="about-container">
-        <h2 className="font-weight-600" id="application-name">
-          <span className="text-green-700">A</span>pplication
-        </h2>
-      </div> */}
+    <div className="mx-auto max-w-7xl">
       <div className="justify-center border p-3 bg-gray-900 mt-20">
         <div className="flex items-center justify-center">
           <p className="text-2xl text-white-700 font-bold underline py-2 my-5">

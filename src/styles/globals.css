@@ -528,7 +528,7 @@ text-decoration-color: rgb(6, 188, 0);
   }
 }
 
-.contact-container h2 {
+.contact-title {
   font-size: 4rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -561,4 +561,8 @@ text-decoration-color: rgb(6, 188, 0);
 
 .app-name-head-projects{
   color: rgb(255, 152, 26);
+}
+
+.app-name-head-contact{
+  color: rgb(255, 204, 26);
 }
