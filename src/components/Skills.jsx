@@ -30,49 +30,29 @@ const Skills = () => {
   }, []);
 
   return (
-    <div>
-      <div className="skills-container">
-        <ApplicationTitle myTitle={"Skills"} />
-        <div className="grid-skills">
-          <div className="skill-card html">
-            <i className="fa-brands fa-html5 html-icon"></i>
-            <p>HTML</p>
+    <div className="mx-auto max-w-7xl px-6 py-8">
+      <ApplicationTitle myTitle={"Skills"} />
+      <div className="grid grid-cols-2 gap-8 md:grid-cols-4 sm:grid-cols-4">
+        {[
+          { name: "HTML", icon: "fa-html5", color: "hover:bg-[#E34F26]" },
+          { name: "CSS", icon: "fa-css3-alt", color: "hover:bg-[#264DE4]" },
+          { name: "JavaScript", icon: "fa-js-square", color: "hover:bg-[#d4bb00]" },
+          { name: "React", icon: "fa-react", color: "hover:bg-[#61DAFB]" },
+          { name: "Node", icon: "fa-node-js", color: "hover:bg-[#339933]" },
+          { name: "Python", icon: "fa-python", color: "hover:bg-[#3776AB]" },
+          { name: "Java", icon: "fa-java", color: "hover:bg-[#ef7000]" },
+          { name: "C / C++", icon: "", color: "hover:bg-[#3cfda6]" },
+          { name: "Flutter(勉強中)", icon: "fa-flutter", color: "hover:bg-[#3c73fd]" },
+          { name: "Ruby（Rails）", icon: "", color: "hover:bg-[#f32929]" },
+        ].map((skill, index) => (
+          <div
+            key={index}
+            className={`bg-gray-300 text-gray-900 flex items-center justify-center gap-4 p-4 rounded-lg shadow-md transition-transform duration-100 ease-in-out cursor-default ${skill.color} hover:scale-105 hover:text-white`}
+          >
+            {skill.icon && <i className={`fa-brands ${skill.icon} text-2xl`}></i>}
+            <p className="">{skill.name}</p>
           </div>
-          <div className="skill-card css">
-            <i className="fa-brands fa-css3-alt css-icon"></i>
-            <p>CSS</p>
-          </div>
-          <div className="skill-card js">
-            <i className="fa-brands fa-js-square js-icon"></i>
-            <p>JavaScript</p>
-          </div>
-          <div className="skill-card react">
-            <i className="fa-brands fa-react react-icon"></i>
-            <p>React</p>
-          </div>
-          <div className="skill-card node">
-            <i className="fa-brands fa-node-js node-icon"></i>
-            <p>Node</p>
-          </div>
-          <div className="skill-card python">
-            <i className="fa-brands fa-python python-icon"></i>
-            <p>Python</p>
-          </div>
-          <div className="skill-card java">
-            <i className="fa-brands fa-java"></i>
-            <p>Java</p>
-          </div>
-          <div className="skill-card c">
-            <p>C / C++</p>
-          </div>
-          <div className="skill-card flutter">
-            <i className="fa-brands fa-flutter"></i>
-            <p>flutter(勉強中)</p>
-          </div>
-          <div className="skill-card ruby">
-            <p>Ruby（Rails）</p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
