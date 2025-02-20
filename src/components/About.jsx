@@ -167,20 +167,47 @@ const About = () => {
                 2024/08〜：量子ICT人材育成プログラムNQC 参加 <br />
                 2024/09〜：株式会社スタディスト ソフトウェアエンジニアインターン{" "} <br />
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-&nbsp; &nbsp;
-                <a
-                  href="https://path.progate.com/career-stories/studist-intern"
-                  className="text-blue-500 underline hover:text-blue-200 transition-colors duration-300"
-                >
-                  インタビュー記事はこちら
-                </a> <br />
+                <span className="group relative inline-block">
+                  <a
+                    href="https://path.progate.com/career-stories/studist-intern"
+                    className="text-blue-500 underline hover:text-blue-200 transition-colors duration-300"
+                    target="_blank"
+                  >
+                    <span>
+                      インタビュー記事はこちら <i class="fa-solid fa-up-right-from-square"></i>
+                    </span>
+                  </a>
+                  <div className="absolute hidden top-1/2 transform -translate-y-1/2 left-full ml-2 w-96 bg-white border border-gray-300 rounded-md shadow-md p-2 group-hover:block z-10 speech-bubble">
+                    <Image
+                      src="/progate-interview.png"
+                      alt="Progate Interview"
+                      width={400}
+                      height={200}
+                      layout="responsive"
+                    />
+                  </div>
+                </span>
+                <br className="speech-bubble-arrow" />
                 2024/10〜：株式会社Jij リサーチエンジニアインターン{"  "} <br />
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-&nbsp; &nbsp;
-                <a
-                  href="https://www.j-ij.com/ja/recruit/interview-mizuno"
-                  className="text-blue-500 underline hover:text-blue-200 transition-colors duration-300"
-                >
-                  インタビュー記事はこちら
-                </a>
+                <span className="group relative inline-block">
+                  <a
+                    href="https://www.j-ij.com/ja/recruit/interview-mizuno"
+                    className="text-blue-500 underline hover:text-blue-200 transition-colors duration-300"
+                    target="_blank"
+                  >
+                    インタビュー記事はこちら <i class="fa-solid fa-up-right-from-square"></i>
+                  </a>
+                  <div className="absolute hidden top-1/2 transform -translate-y-1/2 left-full ml-2 w-96 bg-white border border-gray-300 rounded-md shadow-md p-2 group-hover:block z-10 speech-bubble">
+                    <Image
+                      src="/jij-interview.png"
+                      alt="Progate Interview"
+                      width={400}
+                      height={200}
+                      layout="responsive"
+                    />
+                  </div>
+                </span>
                 <br></br>
               </p>
             </div>
@@ -201,7 +228,7 @@ const About = () => {
                 </button>
                 <br></br>
                 {isExpanded && (
-                  <div className="mt-4 bg-gray-100 px-20 py-5 rounded-lg">
+                  <div className="mt-4 bg-gray-100 px-3 sm:px-20 py-5 rounded-lg">
                     <p className="w-full text-black">
                       このセッションで
                       <span className="font-bold">
@@ -217,12 +244,20 @@ const About = () => {
                           className="rounded-lg shadow-md w-1/2 sm:w-full"
                         />
                       </div>
-                      <div className="w-80 aspect-auto sm:ml-10 mt-3">
+                      <div className="w-70 sm:w-80 aspect-auto  sm:ml-10 mt-3">
                         <img
                           src="/qi_award_table.png"
                           alt="award_table"
                           className="rounded-lg shadow-md "
                         />
+                      </div>
+                    </div>
+                    <div>
+                      <div className="w-full flex justify-center">
+                        <a href="https://www.shibaura-it.ac.jp/headline/award/20250117_7070_002.html"
+                          className="w-30 bg-green-500 text-black py-2 px-4 rounded-lg mt-4 text-center hover:bg-green-400 transition-colors duration-300"
+                          target="_blank"
+                        >大学の広報サイト</a>
                       </div>
                     </div>
                   </div>
