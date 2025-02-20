@@ -168,7 +168,7 @@ const About = () => {
                 2024/09〜：株式会社スタディスト ソフトウェアエンジニアインターン{" "} <br />
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-&nbsp; &nbsp;
                 <a
-                  href="https://www.j-ij.com/ja/recruit/interview-mizuno"
+                  href="https://path.progate.com/career-stories/studist-intern"
                   className="text-blue-500 underline hover:text-blue-200 transition-colors duration-300"
                 >
                   インタビュー記事はこちら
