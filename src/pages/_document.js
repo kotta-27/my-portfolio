@@ -57,6 +57,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700"
           rel="stylesheet"
         />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css" />
         <meta
           name="google-site-verification"
           content="Tbiw4HEy5H_jcbsJBpsMZKTFcb6L1LCoWdKMkYiKUZI"

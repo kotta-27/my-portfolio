@@ -101,8 +101,7 @@
         }
     },
     "skills": {
-        "title": "スキル",
-        "description": "使用技術"
+        "description": "使用経験のある技術"
     },
     "works": {
         "title": "作品",
