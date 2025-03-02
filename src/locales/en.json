@@ -135,7 +135,17 @@
 					"note": "December 1, 2024: Featured on RIKEN's Q-Portal website!",
 					"link": "https://x.com/Q_Portal_/status/1861987301041275218"
 				}
-			]
+			],
+			"badges": {
+				"exhibition": {
+					"line1": "RIKEN × Miraikan Event",
+					"line2": "Exhibition Work"
+				},
+				"featured": {
+					"line1": "RIKEN Website",
+					"line2": "Featured on Q-Portal"
+				}
+			}
 		},
 		"nanj": {
 			"title": "Bulletin Board Generator",
@@ -153,7 +163,11 @@
 					"note": "System architecture of this product (topaz) ↓",
 					"link": "https://topaz.dev/projects/c2b70f218e31d6ed65d6"
 				}
-			]
+			],
+			"badge": {
+				"line1": "2nd Progate × AWS",
+				"line2": "Hackathon Grand Prize Winner"
+			}
 		},
 		"qcircuit": {
 			"title": "Quantum Circuit Demo Application",
@@ -167,7 +181,11 @@
 			"description": [
 				"Frontend: Remix, Backend: Qulacs(Python)",
 				"Uses user-typed words to perform quantum circuit learning and generates more difficult words for the user."
-			]
+			],
+			"badge": {
+				"line1": "QC4U2 Group Work",
+				"line2": "5th Place Overall"
+			}
 		}
 	}
 }

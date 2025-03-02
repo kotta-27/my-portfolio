@@ -101,7 +101,7 @@
         }
     },
     "skills": {
-        "description": "使用経験のある技術"
+        "description": "使用経験のある技術一覧："
     },
     "works": {
         "title": "作品",
@@ -135,7 +135,17 @@
                     "note": "2024/12/01：理研サイトQ-Portalに掲載されました！",
                     "link": "https://x.com/Q_Portal_/status/1861987301041275218"
                 }
-            ]
+            ],
+            "badges": {
+                "exhibition": {
+                    "line1": "理研×未来館イベント",
+                    "line2": "展示作品"
+                },
+                "featured": {
+                    "line1": "理研サイト",
+                    "line2": "Q-Portal 掲載作品"
+                }
+            }
         },
         "nanj": {
             "title": "掲示板ジェネレータ",
@@ -153,7 +163,11 @@
                     "note": "このプロダクトのシステム構成（topaz）↓",
                     "link": "https://topaz.dev/projects/c2b70f218e31d6ed65d6"
                 }
-            ]
+            ],
+            "badge": {
+                "line1": "第2回 Progate×AWS",
+                "line2": "ハッカソン最優秀賞作品"
+            }
         },
         "qcircuit": {
             "title": "量子回路デモアプリケーション",
@@ -168,7 +182,11 @@
                 "フロントエンド：Remix, バックエンド：Qulacs(Python)",
                 "ユーザがタイピングする単語の情報を用いて量子回路学習を行い、",
                 "ユーザがより難しいと感じる単語を出題するタイピングゲームです。"
-            ]
+            ],
+            "badge": {
+                "line1": "QC4U2 GroupWork",
+                "line2": "全体5位"
+            }
         }
     }
 }

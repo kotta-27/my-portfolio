@@ -1,7 +1,30 @@
 import React from "react";
 import { useLanguage } from '../contexts/LanguageContext';
+
+const Badge = ({ gradient, textColor, children }) => (
+  <div className="w-full px-3">
+    <div
+      className={`
+        px-3 py-3 rounded-lg font-bold text-center
+        transform transition-all duration-300 hover:scale-105
+        shadow-lg
+      `}
+      style={{
+        background: gradient,
+        color: textColor,
+        fontSize: "0.8rem",
+        textShadow: "1px 1px 2px rgba(0,0,0,0.1)",
+        boxShadow: "0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)",
+      }}
+    >
+      {children}
+    </div>
+  </div>
+);
+
 const App_qpizza = () => {
   const { translations } = useLanguage();
+  const { badges } = translations.applications.pizza;
 
   return (
     <div className="mx-auto max-w-7xl">
@@ -9,48 +32,28 @@ const App_qpizza = () => {
         <div className="relative flex flex-col sm:flex-row items-center mb-6">
           <div className="w-full sm:w-1/3" />
           <div className="text-2xl font-bold underline py-2 my-5 sm:my-0 w-full sm:w-1/3 text-center">
-            Quantum Pizza
+            {translations.applications.pizza.title}
           </div>
-          {/* バナー1 */}
-          <div className="w-full sm:w-1/3 flex justify-end">
-            <div className="w-1/2 flex justify-end" style={{ height: "80px" }}>
-              <div
-                className="px-2 py-5 rounded-lg font-bold text-sm text-center duration-300 ease-in-out shadow-lg mt-4 sm:mt-0"
-                style={{
-                  background: "linear-gradient(135deg, #00A8FF, #AAA5FF)",
-                  color: "#000",
-                  fontSize: "0.7rem",
-                  textShadow: "1px 1px 2px rgba(0,0,0,0.1)",
-                  boxShadow:
-                    "0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                理研×未来館イベント
-                <br />
-                展示作品
-              </div>
-            </div>
-            <div className="w-1/2 flex justify-end" style={{ height: "80px" }}>
-              <div
-                className="px-2 py-5 rounded-lg font-bold text-sm text-center duration-300 ease-in-out shadow-lg mt-4 sm:mt-0"
-                style={{
-                  background: "linear-gradient(135deg, #0044FF, #7766FF)",
-                  color: "#fff",
-                  fontSize: "0.7rem",
-                  textShadow: "1px 1px 2px rgba(0,0,0,0.1)",
-                  boxShadow:
-                    "0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                理研サイト
-                <br />
-                Q-Portal 掲載作品
-              </div>
-            </div>
+
+          {/* バッジコンテナ */}
+          <div className="w-full sm:w-1/3 flex flex-row justify-end gap-2 px-2">
+            <Badge
+              gradient="linear-gradient(135deg, #00A8FF, #AAA5FF)"
+              textColor="#000"
+            >
+              <span>{badges.exhibition.line1}</span>
+              <br />
+              <span>{badges.exhibition.line2}</span>
+            </Badge>
+
+            <Badge
+              gradient="linear-gradient(135deg, #0044FF, #7766FF)"
+              textColor="#fff"
+            >
+              <span>{badges.featured.line1}</span>
+              <br />
+              <span>{badges.featured.line2}</span>
+            </Badge>
           </div>
         </div>
 

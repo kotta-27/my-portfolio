@@ -1,8 +1,30 @@
 import React from "react";
 import { useLanguage } from '../contexts/LanguageContext';
 
+const Badge = ({ gradient, textColor, children }) => (
+  <div className="w-full px-3">
+    <div
+      className={`
+        px-3 py-3 rounded-lg font-bold text-center
+        transform transition-all duration-300 hover:scale-105
+        shadow-lg
+      `}
+      style={{
+        background: gradient,
+        color: textColor,
+        fontSize: "0.8rem",
+        textShadow: "1px 1px 2px rgba(0,0,0,0.1)",
+        boxShadow: "0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)",
+      }}
+    >
+      {children}
+    </div>
+  </div>
+);
+
 const App_nanj = () => {
   const { translations } = useLanguage();
+  const { badge } = translations.applications.nanj;
 
   return (
     <div className="mx-auto max-w-7xl">
@@ -13,20 +35,15 @@ const App_nanj = () => {
             {translations.applications.nanj.title}
           </div>
           <div className="w-full sm:w-1/3 flex justify-end">
-            <div
-              className="px-4 py-3 rounded-lg font-bold text-sm text-center duration-300 ease-in-out shadow-lg mt-4 sm:mt-0"
-              style={{
-                marginRight: "1rem",
-                background: "linear-gradient(135deg, #FFD700, #FFA500)",
-                color: "#000",
-                textShadow: "1px 1px 2px rgba(0,0,0,0.1)",
-                boxShadow:
-                  "0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)",
-              }}
-            >
-              第2回 Progate×AWS
-              <br />
-              ハッカソン最優秀賞作品
+            <div>
+              <Badge
+                gradient="linear-gradient(135deg, #FFD700, #FFA500)"
+                textColor="#000"
+              >
+                <span>{badge.line1}</span>
+                <br />
+                <span>{badge.line2}</span>
+              </Badge>
             </div>
           </div>
         </div>

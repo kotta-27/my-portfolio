@@ -101,7 +101,8 @@ const Skills = () => {
             <motion.div
               key={idx}
               variants={cardVariants}
-              className={`bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 border-l-4 border-blue-400`}
+              whileHover={{ scale: 1.02 }}
+              className="bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-blue-400"
             >
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">
@@ -143,7 +144,8 @@ const Skills = () => {
             <motion.div
               key={idx}
               variants={cardVariants}
-              className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 border-l-4 border-green-400" 
+              whileHover={{ scale: 1.02 }}
+              className="bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-green-400"
             >
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">

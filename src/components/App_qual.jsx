@@ -1,8 +1,30 @@
 import React from "react";
 import { useLanguage } from '../contexts/LanguageContext';
 
+const Badge = ({ gradient, textColor, children }) => (
+  <div className="w-full px-3">
+    <div
+      className={`
+        px-3 py-3 rounded-lg font-bold text-center
+        transform transition-all duration-300 hover:scale-105
+        shadow-lg
+      `}
+      style={{
+        background: gradient,
+        color: textColor,
+        fontSize: "0.8rem",
+        textShadow: "1px 1px 2px rgba(0,0,0,0.1)",
+        boxShadow: "0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)",
+      }}
+    >
+      {children}
+    </div>
+  </div>
+);
+
 const App_qual = () => {
   const { translations } = useLanguage();
+  const { badge } = translations.applications.qual;
 
   return (
     <div className="mx-auto max-w-7xl">
@@ -13,19 +35,15 @@ const App_qual = () => {
             {translations.applications.qual.title}
           </div>
           <div className="w-full sm:w-1/3 flex justify-end">
-            <div
-              className="px-4 py-3 rounded-lg font-bold text-sm text-center duration-300 ease-in-out shadow-lg mt-4 sm:mt-0"
-              style={{
-                background: "linear-gradient(135deg, #4F46E5, #2563EB)",
-                color: "#ffffff",
-                textShadow: "1px 1px 2px rgba(0,0,0,0.2)",
-                boxShadow:
-                  "0 4px 6px rgba(37, 99, 235, 0.3), 0 1px 3px rgba(37, 99, 235, 0.1)",
-              }}
-            >
-              QC4U2 GroupWork
-              <br />
-              全体5位
+            <div className="flex flex-row gap-2">
+              <Badge
+                gradient="linear-gradient(135deg, #4F46E5, #2563EB)"
+                textColor="#fff"
+              >
+                <span>{badge.line1}</span>
+                <br />
+                <span>{badge.line2}</span>
+              </Badge>
             </div>
           </div>
         </div>
