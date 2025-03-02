@@ -1,12 +1,15 @@
 import React from "react";
+import { useLanguage } from '../contexts/LanguageContext';
 
 const App_qcircuit = () => {
+  const { translations } = useLanguage();
+
   return (
     <div className="mx-auto max-w-7xl">
-      <div className="justify-center border p-3 bg-gray-900 mt-20">
+      <div className="justify-center border p-3 bg-gray-900 mt-20 rounded-lg">
         <div className="flex items-center justify-center">
           <p className="text-2xl text-white-700 font-bold underline py-2 my-5">
-            量子回路デモアプリケーション
+            {translations.applications.qcircuit.title}
           </p>
         </div>
 
@@ -24,8 +27,11 @@ const App_qcircuit = () => {
           />
         </a>
         <div className="flex items-center justify-center py-3">
-          React.js，Django，Qiskitによる量子回路シミュレータ．<br></br>
-          ブラウザ上で簡単に量子ゲートによる演算のシミュレートが可能です．
+          {translations.applications.qcircuit.description.map((line, index) => (
+            <React.Fragment key={index}>
+              {line}<br></br>
+            </React.Fragment>
+          ))}
         </div>
         <div className="flex justify-end">
           {" "}

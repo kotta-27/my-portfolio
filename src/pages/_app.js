@@ -5,6 +5,7 @@ import "@/styles/globals.css";
 import Layout from "../components/Layout";
 import { useRouter } from "next/router";
 import EnhancedLoading from "../components/EnhancedLoading";
+import { LanguageProvider } from '../contexts/LanguageContext';
 
 export default function App({ Component, pageProps }) {
   const [showWelcome, setShowWelcome] = useState(true);
@@ -54,25 +55,27 @@ export default function App({ Component, pageProps }) {
   };
 
   return (
-    <AnimatePresence mode="wait">
-      {showWelcome ? (
-        <EnhancedLoading key="welcome" />
-      ) : isLoading ? (
-        <EnhancedLoading key="loading" />
-      ) : (
-        <Layout key="main">
-          <motion.div
-            key={router.route}
-            variants={pageVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            style={{ position: "relative", width: "100%" }}
-          >
-            <Component {...pageProps} />
-          </motion.div>
-        </Layout>
-      )}
-    </AnimatePresence>
+    <LanguageProvider>
+      <AnimatePresence mode="wait">
+        {showWelcome ? (
+          <EnhancedLoading key="welcome" />
+        ) : isLoading ? (
+          <EnhancedLoading key="loading" />
+        ) : (
+          <Layout key="main">
+            <motion.div
+              key={router.route}
+              variants={pageVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              style={{ position: "relative", width: "100%" }}
+            >
+              <Component {...pageProps} />
+            </motion.div>
+          </Layout>
+        )}
+      </AnimatePresence>
+    </LanguageProvider>
   );
 }

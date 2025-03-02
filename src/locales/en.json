@@ -1,0 +1,174 @@
+{
+	"about": {
+		"name": "Kota Mizuno",
+		"education": "Shibaura Institute of Technology, Graduate School of Science and Engineering, Department of Electrical and Electronic Information Engineering, Master's Program (M1)",
+		"labTag": "Lab",
+		"labName": "Quantum Information Engineering Laboratory (Watabe Lab)",
+		"birthplace": "Birthplace: Tokyo",
+		"graduationResearch": "Graduation Research: \"Application of the Imaginary Time Evolution Method to the Shortest Vector Problem in Excited States Search\"",
+		"researchTheme": "Research Theme: Lattice Cryptography, Quantum Algorithms, Mathematical Optimization",
+		"paper": "🎉 New Paper Published!",
+		"experienceTag": "Experience",
+		"achievements": "Achievements",
+		"achievementsList": [
+			{
+				"date": "May 2024",
+				"prefix": "",
+				"eventName": "QC4U2",
+				"suffix": "： Live-streamed Public Quantum Computing Course – Group Work 5th Place Overall (Quantum Typing Game)"
+			},
+			{
+				"date": "May 2024",
+				"prefix": "",
+				"eventName": "Quantum Annealing Ideathon",
+				"suffix": " – Group Work 2nd Place Overall"
+			},
+			{
+				"date": "June 2024",
+				"prefix": "",
+				"eventName": "Progate Hackathon powered by AWS",
+				"suffix": " – Grand Prize Winner"
+			},
+			{
+				"date": "October 2024",
+				"prefix": "",
+				"eventName": "International Network on Quantum Annealing (INQA 2024) Conference",
+				"suffix": " – Poster Presentation"
+			},
+			{
+				"date": "October 2024",
+				"prefix": "",
+				"eventName": "Quantum Innovation 2024",
+				"suffix": " – Poster Presentation",
+				"hasAward": true
+			},
+			{
+				"date": "October 2024",
+				"prefix": "",
+				"eventName": "The 13th Quantum Software Research Presentation Meeting",
+				"suffix": " – Oral Presentation"
+			}
+		],
+		"experiences": [
+			{
+				"date": "August 2023",
+				"prefix": "Student Staff at RIKEN-hosted event \"",
+				"linkText": "量子コンピュータってなんだろう？",
+				"suffix": "\"",
+				"link": "https://www.riken.jp/pr/events/events/20230811_1/index.html"
+			},
+			{
+				"date": "September 2023",
+				"description": "Quantum × Information Intern at QunaSys Inc."
+			},
+			{
+				"date": "February 2024",
+				"description": "Participant in QC4U2, a live-streamed public quantum computing course"
+			},
+			{
+				"date": "June 2024 - Present",
+				"description": "Engineering Intern at CRISP Inc."
+			},
+			{
+				"date": "August 2024",
+				"prefix": "Student Staff at RIKEN × Miraikan-hosted event \"",
+				"linkText": "クイズとゲームでせまる！量子コンピュータ",
+				"suffix": "\"",
+				"link": "https://www.miraikan.jst.go.jp/events/202408033551.html"
+			},
+			{
+				"date": "August 2024 - Present",
+				"description": "Participant in the NQC (Quantum ICT Human Resource Development Program)"
+			},
+			{
+				"date": "September 2024 - Present",
+				"description": "Software Engineer Intern at Studist Corporation",
+				"interviewLink": "https://path.progate.com/career-stories/studist-intern",
+				"interviewText": "Read the interview here"
+			},
+			{
+				"date": "October 2024",
+				"description": "Research Engineer Intern at Jij Inc.",
+				"interviewLink": "https://www.j-ij.com/ja/recruit/interview-mizuno",
+				"interviewText": "Read the interview here"
+			}
+		],
+		"award": {
+			"description": "At this session, I received the",
+			"title": "\"Poster Presentation Award for Young Researcher\"",
+			"congratulations": "! 🎉",
+			"universityLink": "University Press Release"
+		}
+	},
+	"skills": {
+		"title": "Skills",
+		"description": "Technologies"
+	},
+	"works": {
+		"title": "Works",
+		"description": "My Projects"
+	},
+	"contact": {
+		"description": "Feel free to contact me."
+	},
+	"applications": {
+		"tex": {
+			"title": "Img2LaTex Converter",
+			"description": [
+				"Developed using React.",
+				"An application that generates LaTeX code from mathematical equations in images.",
+				"Uses Gemini API for image analysis and LaTeX code generation.",
+				"Features a \"Explain the Equation\" button that displays a simple explanation of the equation."
+			],
+			"note": "* Currently requires login authentication due to API usage restrictions."
+		},
+		"pizza": {
+			"title": "Quantum Pizza",
+			"description": [
+				"Developed using React.",
+				"A game where you apply the appropriate quantum gates to create pizzas that match the given challenge.",
+				"Includes detailed explanations to serve as a beginner-friendly introduction to quantum information.",
+				"Created as an exhibit for the RIKEN × Miraikan event 'クイズとゲームでせまる！量子コンピュータ'.",
+				"Supports Japanese, English, and Chinese."
+			],
+			"notes": [
+				{
+					"note": "December 1, 2024: Featured on RIKEN's Q-Portal website!",
+					"link": "https://x.com/Q_Portal_/status/1861987301041275218"
+				}
+			]
+		},
+		"nanj": {
+			"title": "Bulletin Board Generator",
+			"description": [
+				"Frontend: React, Backend: Python",
+				"Automatically generates discussion threads based on user-input keywords.",
+				"Uses Claude 3 Haiku and Stable Diffusion as generation models, with Amazon Bedrock for orchestration."
+			],
+			"notes": [
+				{
+					"note": "Read the blog post here ↓",
+					"link": "https://aws.amazon.com/jp/blogs/startup/progate-hackathon-powered-by-aws-2024/"
+				},
+				{
+					"note": "System architecture of this product (topaz) ↓",
+					"link": "https://topaz.dev/projects/c2b70f218e31d6ed65d6"
+				}
+			]
+		},
+		"qcircuit": {
+			"title": "Quantum Circuit Demo Application",
+			"description": [
+				"Quantum circuit simulator using React, Django, and Qiskit",
+				"Easy simulation of quantum operations on the browser."
+			]
+		},
+		"qual": {
+			"title": "Quantum Typing Game",
+			"description": [
+				"Frontend: Remix, Backend: Qulacs(Python)",
+				"Uses user-typed words to perform quantum circuit learning and generates more difficult words for the user."
+			]
+		}
+	}
+}

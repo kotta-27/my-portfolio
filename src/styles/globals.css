@@ -424,7 +424,7 @@ hr {
 }
 
 .scale-on-hover-app:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
   /* ホバー時にスケールを1.1倍に */
 }
 
@@ -566,7 +566,7 @@ hr {
   color: rgb(1, 184, 86);
 }
 
-.app-name-head-projects {
+.app-name-head-works {
   color: rgb(255, 152, 26);
 }
 

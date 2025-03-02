@@ -1,10 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
-import ApplicationTitle from "./ApplicationTitle";
-
+import React from "react";
+import { useLanguage } from '../contexts/LanguageContext';
 const App_qpizza = () => {
+  const { translations } = useLanguage();
+
   return (
     <div className="mx-auto max-w-7xl">
-      <div className="justify-center border p-3 bg-gray-900 text-white mt-20">
+      <div className="justify-center border p-3 bg-gray-900 text-white mt-20 rounded-lg">
         <div className="relative flex flex-col sm:flex-row items-center mb-6">
           <div className="w-full sm:w-1/3" />
           <div className="text-2xl font-bold underline py-2 my-5 sm:my-0 w-full sm:w-1/3 text-center">
@@ -64,32 +65,20 @@ const App_qpizza = () => {
           />
         </a>
         <div className="flex-col items-center justify-center py-3 text-center">
-          Reactを用いて作成．<br></br>
-          適切な量子ゲートを作用させて，お題に合うピザをつくるゲームです．
+          {translations.applications.pizza.description.map((line, index) => (
+            <React.Fragment key={index}>
+              {line}<br />
+            </React.Fragment>
+          ))}
           <br />
-          丁寧な解説をつけており，量子情報を学ぶ第一歩になれば幸いです．
-          <br />
-          理研×未来館イベント「クイズとゲームで迫る！量子コンピュータ」の展示作品として作成しました．
-          <br />
-          日本語/英語/中国語に対応しています．
-          <br />
-          <br />
-          2024/12/01：理研サイトQ-Portalに掲載されました！
-          <br />
-          <a
-            href="https://x.com/Q_Portal_/status/1861987301041275218"
-            style={{
-              color: "#00A8FF",
-              wordWrap: "break-word",
-              textDecoration: "underline",
-              transition: "color 0.3s",
-              ":hover": {
-                color: "#AAA5FF",
-              },
-            }}
-          >
-            https://x.com/Q_Portal_/status/1861987301041275218
-          </a>
+          {translations.applications.pizza.notes.map((note, index) => (
+            <React.Fragment key={index}>
+              {note.note}<br />
+              <a href={note.link} target="_blank" className="underline text-blue-500 hover:text-blue-200 transition-colors duration-300 break-all">
+                {note.link}
+              </a>
+            </React.Fragment>
+          ))}
         </div>
         <div className="flex justify-end">
           {" "}

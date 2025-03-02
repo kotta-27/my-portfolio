@@ -1,13 +1,16 @@
 import React from "react";
+import { useLanguage } from '../contexts/LanguageContext';
 
 const App_qual = () => {
+  const { translations } = useLanguage();
+
   return (
     <div className="mx-auto max-w-7xl">
-      <div className="justify-center border p-3 bg-gray-900 text-white mt-20">
+      <div className="justify-center border p-3 bg-gray-900 text-white mt-20 rounded-lg">
         <div className="relative flex flex-col md:flex-row justify-center items-center mb-6">
           <div className="w-full sm:w-1/3" />
           <div className="text-2xl font-bold underline py-2 my-5 sm:my-0 w-full sm:w-1/3 text-center">
-            量子タイピングゲーム
+            {translations.applications.qual.title}
           </div>
           <div className="w-full sm:w-1/3 flex justify-end">
             <div
@@ -38,9 +41,11 @@ const App_qual = () => {
           />
         </a>
         <div className="flex items-center justify-center py-3">
-          フロントエンド：Remix，バックエンド：Qulacs(Python)<br></br>
-          ユーザがタイピングする単語の情報を用いて量子機械学習を行い，<br></br>
-          ユーザがより難しいと感じる単語を出題するタイピングゲームです．
+          {translations.applications.qual.description.map((line, index) => (
+            <React.Fragment key={index}>
+              {line}<br></br>
+            </React.Fragment>
+          ))}
         </div>
         <div className="flex justify-end">
           {" "}

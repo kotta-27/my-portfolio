@@ -1,13 +1,16 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
+import { useLanguage } from '../contexts/LanguageContext';
 
 const App_nanj = () => {
+  const { translations } = useLanguage();
+
   return (
     <div className="mx-auto max-w-7xl">
-      <div className="justify-center border p-3 bg-gray-900 text-white mt-20">
+      <div className="justify-center border p-3 bg-gray-900 text-white mt-20 rounded-lg">
         <div className="relative flex flex-col sm:flex-row items-center mb-6">
           <div className="w-full sm:w-1/3" />
           <div className="text-2xl font-bold underline py-2 my-5 sm:my-0 w-full sm:w-1/3 text-center">
-            掲示板ジェネレータ
+            {translations.applications.nanj.title}
           </div>
           <div className="w-full sm:w-1/3 flex justify-end">
             <div
@@ -39,46 +42,22 @@ const App_nanj = () => {
           />
         </a>
         <div className="flex-col items-center justify-center py-3 text-center">
-          フロントエンド：React，バックエンド：Python<br></br>
-          ユーザ入力からキーワードを受け取り，それにあった内容のスレッドを自動生成します．
+          {translations.applications.nanj.description.map((line, index) => (
+            <React.Fragment key={index}>
+              {line}<br />
+            </React.Fragment>
+          ))}
           <br />
-          生成モデルにはClaude 3 HaikuとStable
-          Diffusionを用い，その制御にはAmazon Bedrockを用いました．
-          <br />
-          <br />
-          ブログ記事はこちらから ↓<br />
-          <a
-            href="https://aws.amazon.com/jp/blogs/startup/progate-hackathon-powered-by-aws-2024/"
-            style={{
-              color: "#00A8FF",
-              wordWrap: "break-word",
-              textDecoration: "underline",
-              transition: "color 0.3s",
-              ":hover": {
-                color: "#AAA5FF",
-              },
-            }}
-          >
-            https://aws.amazon.com/jp/blogs/startup/progate-hackathon-powered-by-aws-2024/
-          </a>
-          <br /><br />
-          このプロダクトのシステム構成(topaz) ↓<br />
-          <a
-            href="https://topaz.dev/projects/c2b70f218e31d6ed65d6"
-            style={{
-              color: "#00A8FF",
-              wordWrap: "break-word",
-              textDecoration: "underline",
-              transition: "color 0.3s",
-              ":hover": {
-                color: "#AAA5FF",
-              },
-            }}
-          >
-            https://topaz.dev/projects/c2b70f218e31d6ed65d6
-          </a>
-
-
+          {translations.applications.nanj.notes.map((note, index) => (
+            <div className="mb-4">
+              <React.Fragment key={index}>
+                {note.note}<br />
+                <a href={note.link} target="_blank" className="underline text-blue-500 hover:text-blue-200 transition-colors duration-300 break-all">
+                  {note.link}
+                </a>
+              </React.Fragment>
+            </div>
+          ))}
         </div>
         <div className="flex justify-end">
           {" "}

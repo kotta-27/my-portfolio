@@ -1,10 +1,12 @@
 // components/EnhancedLoading.js
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function EnhancedLoading() {
     const [loadingProgress, setLoadingProgress] = useState(0);
     const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
+    const { translations } = useLanguage();
 
     useEffect(() => {
         // クライアントサイドでwindowサイズを設定
@@ -112,7 +114,7 @@ export default function EnhancedLoading() {
                 animate={{ opacity: [0, 1, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
             >
-                Loading system...
+                Loading System...
             </motion.div>
         </div>
     );

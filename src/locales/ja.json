@@ -1,0 +1,175 @@
+{
+    "about": {
+        "name": "Kota Mizuno / 水野航太",
+        "education": "芝浦工業大学大学院 理工学研究科 電気・電子情報工学専攻 M1",
+        "labTag": "研究室",
+        "labName": "量子情報工学研究室（渡部研）",
+        "birthplace": "出身：東京",
+        "graduationResearch": "卒業研究：「虚時間発展法を用いた励起状態探索の最短ベクトル問題への応用」",
+        "researchTheme": "研究テーマ：格子暗号，量子アルゴリズム，数理最適化",
+        "paper": "🎉 論文投稿しました！",
+        "experienceTag": "経歴",
+        "achievements": "実績",
+        "achievementsList": [
+            {
+                "date": "2024/05",
+                "prefix": "量子コンピューティング公開伴送型生配信授業",
+                "eventName": "QC4U2",
+                "suffix": "グループワーク 全体5位 量子タイピングゲーム"
+            },
+            {
+                "date": "2024/05",
+                "prefix": "",
+                "eventName": "量子アニーリングアイディアソン",
+                "suffix": "グループワーク 全体2位"
+            },
+            {
+                "date": "2024/06",
+                "prefix": "",
+                "eventName": "Progateハッカソン powered by AWS",
+                "suffix": "最優秀賞"
+            },
+            {
+                "date": "2024/10",
+                "prefix": "",
+                "eventName": "量子アニーリング国際ネットワークINQA2024国際会議",
+                "suffix": "ポスター発表"
+            },
+            {
+                "date": "2024/10",
+                "prefix": "",
+                "eventName": "Quantum Innovation2024",
+                "suffix": "ポスターセッション発表",
+                "hasAward": true
+            },
+            {
+                "date": "2024/10",
+                "prefix": "",
+                "eventName": "第13回量子ソフトウェア研究発表会",
+                "suffix": "口頭発表"
+            }
+        ],
+        "experiences": [
+            {
+                "date": "2023/08",
+                "prefix": "理化学研究所主催「",
+                "linkText": "量子コンピュータってなんだろう？",
+                "suffix": "」学生スタッフ",
+                "link": "https://www.riken.jp/pr/events/events/20230811_1/index.html"
+            },
+            {
+                "date": "2023/09〜",
+                "description": "株式会社QunaSys 量子×情報インターン"
+            },
+            {
+                "date": "2024/02〜",
+                "description": "量子コンピューティング公開伴送型生配信授業QC4U2 参加"
+            },
+            {
+                "date": "2024/06〜",
+                "description": "株式会社CRISP エンジニアインターン"
+            },
+            {
+                "date": "2024/08",
+                "prefix": "理化学研究所×日本科学未来館主催「",
+                "linkText": "クイズとゲームでせまる！量子コンピュータ",
+                "suffix": "」学生スタッフ",
+                "link": "https://www.miraikan.jst.go.jp/events/202408033551.html"
+            },
+            {
+                "date": "2024/08〜",
+                "description": "量子ICT人材育成プログラムNQC 参加"
+            },
+            {
+                "date": "2024/09〜",
+                "description": "株式会社スタディスト ソフトウェアエンジニアインターン",
+                "interviewLink": "https://path.progate.com/career-stories/studist-intern",
+                "interviewText": "インタビュー記事はこちら"
+            },
+            {
+                "date": "2024/10〜",
+                "description": "株式会社Jij リサーチエンジニアインターン",
+                "interviewLink": "https://www.j-ij.com/ja/recruit/interview-mizuno",
+                "interviewText": "インタビュー記事はこちら"
+            }
+        ],
+        "award": {
+            "description": "このセッションで",
+            "title": "\"Poster Presentation Award for Young Researcher\"",
+            "congratulations": "を受賞しました！ 🎉",
+            "universityLink": "大学の広報サイト"
+        }
+    },
+    "skills": {
+        "title": "スキル",
+        "description": "使用技術"
+    },
+    "works": {
+        "title": "作品",
+        "description": "制作物一覧"
+    },
+    "contact": {
+        "description": "なんでも連絡ください。"
+    },
+    "applications": {
+        "tex": {
+            "title": "Img2LaTex Converter",
+            "description": [
+                "Reactを用いて作成。",
+                "画像を読み込み、画像内の数式をLaTexコードを生成するアプリケーション。",
+                "Gemini APIを用いて画像解析を行い、LaTexコードを生成します。",
+                "「数式について説明する」ボタンもあり，数式の簡単な解説を表示します。"
+            ],
+            "note": "※現在は，APIの利用上，ログイン認証を設けています。"
+        },
+        "pizza": {
+            "title": "Quantum Pizza",
+            "description": [
+                "Reactを用いて作成。",
+                "適切な量子ゲートを作用させて、お題に合うピザを作るゲームです。",
+                "丁寧な解説をつけており、量子情報を学ぶ第一歩になれば幸いです。",
+                "理研×未来館イベント「クイズとゲームでせまる！量子コンピュータ」の展示作品として作成しました。",
+                "日本語/英語/中国語に対応しています。"
+            ],
+            "notes": [
+                {
+                    "note": "2024/12/01：理研サイトQ-Portalに掲載されました！",
+                    "link": "https://x.com/Q_Portal_/status/1861987301041275218"
+                }
+            ]
+        },
+        "nanj": {
+            "title": "掲示板ジェネレータ",
+            "description": [
+                "フロントエンド：React、バックエンド：Python",
+                "ユーザ入力からキーワードを受け取り、それに合った内容のスレッドを自動生成します。",
+                "生成モデルにはClaude3 HaikuとStable Diffusionを用い、その制御にはAmazon Bedrockを用いました。"
+            ],
+            "notes": [
+                {
+                    "note": "ブログ記事はこちら↓",
+                    "link": "https://aws.amazon.com/jp/blogs/startup/progate-hackathon-powered-by-aws-2024/"
+                },
+                {
+                    "note": "このプロダクトのシステム構成（topaz）↓",
+                    "link": "https://topaz.dev/projects/c2b70f218e31d6ed65d6"
+                }
+            ]
+        },
+        "qcircuit": {
+            "title": "量子回路デモアプリケーション",
+            "description": [
+                "React、Django、Qiskitによる量子回路シミュレータ",
+                "ブラウザ上で簡単に量子ゲートによる演算のシミュレートが可能です。"
+            ]
+        },
+        "qual": {
+            "title": "量子タイピングゲーム",
+            "description": [
+                "フロントエンド：Remix, バックエンド：Qulacs(Python)",
+                "ユーザがタイピングする単語の情報を用いて量子回路学習を行い、",
+                "ユーザがより難しいと感じる単語を出題するタイピングゲームです。"
+            ]
+        }
+    }
+}

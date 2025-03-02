@@ -2,16 +2,26 @@
 "use client";
 
 import ApplicationTitle from "./ApplicationTitle.jsx";
-import { projectData } from "./data.js";
+import { projectDataJa, projectDataEn } from "./data.js";
 import React from "react";
+import { useLanguage } from '../contexts/LanguageContext';
 
-const Projects = () => {
+
+const Works = () => {
   const ref = React.createRef();
+  const { language } = useLanguage();
+
+  let projectData;
+  if (language === "ja") {
+    projectData = projectDataJa;
+  } else {
+    projectData = projectDataEn;
+  }
 
   return (
     <div className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <ApplicationTitle myTitle={"Projects"} />
+        <ApplicationTitle myTitle={"Works"} />
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projectData &&
             projectData.map((project) => (
@@ -57,4 +67,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Works;

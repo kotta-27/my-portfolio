@@ -4,7 +4,7 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import App_qcircuit from "@/components/App_qcircuit";
 import App_qual from "@/components/App_qual";
-import Projects from "../components/Projects";
+import Works from '../components/Works';
 import Contact from "../components/Contact";
 import App_nanj from "@/components/App_nanj";
 import App_qpizza from "@/components/App_qpizza";
@@ -24,7 +24,7 @@ const Home = () => {
         <App_nanj />
         <App_qcircuit />
         <App_qual />
-        <Projects />
+        <Works />
         <Contact />
       </div>
     </main>

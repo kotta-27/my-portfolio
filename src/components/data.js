@@ -1,6 +1,6 @@
 // components/data.js
 
-export const projectData = [
+export const projectDataJa = [
   {
     id: 1,
     title: "Todo List App",
@@ -60,3 +60,61 @@ export const projectData = [
     gitHubLink: "https://github.com/olawanlejoel/TwitterUI-clone",
   },
 ];
+
+export const projectDataEn = [
+  {
+    id: 1,
+    title: "Todo List App",
+    image: "/todoapp2.png",
+    langs: ["react"],
+    description:
+      "Simple TO-DO app created using next.js. The json server is a local library that runs on the local server, and the modern CSS framework tailwind is also used. ",
+    gitHubLink: "https://github.com/olawanlejoel/Todo-List-App",
+  },
+  {
+    id: 2,
+    title: "Shift Management App",
+    image: "/shiftapp.png",
+    langs: ["python", "js"],
+    description:
+      "Developed as part of the first year of the Advanced Information Seminar. Created a shift management app using Django, a Python web application framework. The calendar is controlled using JavaScript, and the chat function between employees is also implemented. ",
+    gitHubLink: "https://github.com/olawanlejoel/Book-Library",
+  },
+  {
+    id: 3,
+    title: "Quantum Circuit Simulator",
+    image: "/tkapp.png",
+    langs: ["python"],
+    description:
+      "Created using Tkinter, a Python GUI library. The internal tensor calculation implements the calculation of quantum states, and the probability distribution is displayed. Adders and Bell state templates are also provided. Presented at OC.",
+    gitHubLink: "https://github.com/olawanlejoel/random-quote-generator",
+  },
+  {
+    id: 4,
+    title: "Assignment Management App",
+    image: "/assapp.png",
+    langs: ["java"],
+    description:
+      "Developed as part of the second year of the Advanced Information Seminar. Created an assignment management app using JavaFX, a Java GUI framework. The app connects to a Postgres database using JDBC, and a reminder function is also implemented based on time. ",
+    gitHubLink: "https://github.com/olawanlejoel/Password-Generator",
+  },
+  {
+    id: 5,
+    title: "Block-Devided Pointing App",
+    image: "/pointapp.png",
+    langs: ["unity"],
+    description:
+      "Developed as part of the second year of the Advanced Information Seminar. Created a pointing app using Unity (C#). The app is a block-devided pointing game, and the traditional method and statistical comparison were conducted. It received the most votes in the voting. ",
+    gitHubLink: "https://github.com/olawanlejoel/TwitterUI-clone",
+  },
+  {
+    id: 6,
+    title: "Bingo App",
+    image: "/bingoapp.png",
+    langs: ["react"],
+    description:
+      "Created as part of the cultural festival. Created a bingo card app for 5x5 bingo cards to verify statistically how many times it takes to get bingo. Implemented in C. ",
+    gitHubLink: "https://github.com/olawanlejoel/TwitterUI-clone",
+  },
+];
+

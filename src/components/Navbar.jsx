@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Navbar = () => {
   const [isTransparent, setIsTransparent] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const { language, setLanguage, translations } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,7 +45,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 w-full bg-zinc-800 z-50 border-b border-zinc-700 transition-all
-      duration-300 ${isOpen ? "opacity-0" : ""} `}>
+      duration-300`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-3/3 md:w-5/6">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center justify-between sm:items-stretch sm:justify-start">
@@ -62,20 +64,35 @@ const Navbar = () => {
             <div className="ml-10 border-l border-gray-600 w-5" />
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4 justify-center items-center">
-                {["About", "Skills", "Applications", "Projects"].map((item) => (
+                {[
+                  { id: 'about', text: 'About' },
+                  { id: 'skills', text: 'Skills' },
+                  { id: 'applications', text: 'Applications' },
+                  { id: 'works', text: 'Works' }
+                ].map((item) => (
                   <a
-                    key={item}
-                    href={`#${item.toLowerCase()}-name`}
+                    key={item.id}
+                    href={`#${item.id}-name`}
                     className="rounded px-3 py-2 text-base font-bold text-gray-300 hover:bg-gray-300 hover:text-black transition duration-150"
-                    onClick={(e) =>
-                      scrollToSection(e, `#${item.toLowerCase()}-name`)
-                    }
+                    onClick={(e) => scrollToSection(e, `#${item.id}-name`)}
                   >
-                    {item}
+                    {item.text}
                   </a>
                 ))}
               </div>
             </div>
+
+            {/* もしjaなら英語への切り替えボタン、enなら日本語への切り替えボタン */}
+            {/* モバイルの場合は非表示 */}
+            <div className="absolute sm:right-0 hidden sm:block">
+              <button
+                onClick={() => setLanguage(language === "ja" ? "en" : "ja")}
+                className="px-0 sm:px-4 py-2 w-10 sm:w-24 text-center border transition-colors rounded-md bg-gray-700 text-white"
+              >
+                {language === "ja" ? "English" : "日本語"}
+              </button>
+            </div>
+
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
             {/* Mobile menu button */}
@@ -128,22 +145,36 @@ const Navbar = () => {
       {/* Mobile menu, show/hide based on menu state. */}
       {isOpen && (
         <div className="sm:hidden" id="mobile-menu">
-          <div className="space-y-1 px-2 pt-2 pb-3">
-            {["About", "Skills", "Applications", "Projects"].map((item) => (
+          {/* 言語切り替えボタン */}
+          <div className="flex justify-center">
+            <button
+              onClick={() => setLanguage(language === "ja" ? "en" : "ja")}
+              className="w-5/6 py-2 px-3 mb-2 text-left transition-colors rounded-md bg-zinc-500 text-white"
+            >
+              {language === "ja" ? "Switch to English" : "Switch to Japanese"}
+            </button>
+          </div>
+          <div className="space-y-2 pb-3 flex flex-col items-center">
+            {[
+              { id: 'about', text: 'About' },
+              { id: 'skills', text: 'Skills' },
+              { id: 'applications', text: 'Applications' },
+              { id: 'works', text: 'Works' }
+            ].map((item) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase()}-name`}
-                className="block rounded-md px-3 py-2 text-base font-medium text-white bg-zinc-900"
-                onClick={(e) =>
-                  scrollToSection(e, `#${item.toLowerCase()}-name`)
-                }
+                key={item.id}
+                href={`#${item.id}-name`}
+                className="w-5/6 block rounded-md px-3 py-2 text-base font-medium text-white bg-zinc-900"
+                onClick={(e) => scrollToSection(e, `#${item.id}-name`)}
               >
-                {item}
+                {item.text}
               </a>
             ))}
           </div>
         </div>
       )}
+
+
     </nav>
   );
 };
