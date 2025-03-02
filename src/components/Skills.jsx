@@ -1,6 +1,7 @@
 import React from "react";
 import { useLanguage } from '../contexts/LanguageContext';
 import ApplicationTitle from "./ApplicationTitle";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const { translations } = useLanguage();
@@ -37,6 +38,33 @@ const Skills = () => {
     }
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3
+      }
+    }
+  };
+
+  const cardVariants = {
+    hidden: {
+      opacity: 0,
+      y: 50
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 12,
+        duration: 0.6
+      }
+    }
+  };
+
   return (
     <div className="py-12" id="skills-name">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,10 +75,17 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.6 }}
+        >
           {skillCategories.map((category, idx) => (
-            <div
+            <motion.div
               key={idx}
+              variants={cardVariants}
               className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300"
             >
               <div className="p-6">
@@ -61,14 +96,14 @@ const Skills = () => {
                   {category.skills.map((skill, skillIdx) => (
                     <div
                       key={skillIdx}
-                      className="group relative bg-gray-50 rounded-lg p-4 hover:bg-gray-200 transition-all duration-300 border-2 border-gray-200"
+                      className="group relative bg-gray-50 rounded-lg py-2 px-2 sm:p-4 hover:bg-gray-200 transition-all duration-300 border-2 border-gray-200"
                     >
-                      <div className="flex items-center space-x-3">
+                      <div className="flex items-center space-x-1 sm:space-x-3">
                         <i
-                          className={`${skill.icon} text-3xl`}
+                          className={`${skill.icon} text-xl sm:text-2xl`}
                           style={{ color: skill.color }}
                         />
-                        <span className="text-gray-700 group-hover:text-gray-900 font-bold">
+                        <span className="text-gray-700 group-hover:text-gray-900 font-bold text-sm sm:text-base">
                           {skill.name}
                         </span>
                       </div>
@@ -77,9 +112,9 @@ const Skills = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
