@@ -53,7 +53,7 @@ const About = () => {
         <ApplicationTitle myTitle={"About"} />
         {/* div1 */}
         <div className="flex flex-col mb-12 items-center justify-center">
-          <div className="flex flex-col md:flex-row w-full sm:w-2/3">
+          <div className="flex flex-col md:flex-row w-full md:w-5/6">
             <div
               ref={contentRef}
               className={`md:w-2/3 transform transition-all duration-1000 ease-out ${isVisible.content
@@ -108,7 +108,7 @@ const About = () => {
         </div>
         {/* div2 */}
         <div className="flex w-full justify-center">
-          <p className="mb-4 w-full sm:w-2/3">
+          <p className="mb-4 w-full md:w-5/6">
             <p className="mb-4 text-2xl font-bold">{translations.about.paper}</p>
             <div className="mb-5 rounded-md bg-gray-100 p-4">
               <p className="mb-2">

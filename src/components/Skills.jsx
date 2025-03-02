@@ -38,6 +38,21 @@ const Skills = () => {
     }
   ];
 
+  const skillCategoriesElse = [
+    {
+      title: "Other",
+      skills: [
+        { name: "Java", icon: "devicon-java-plain colored", color: "#007396" },
+        { name: "C#", icon: "devicon-csharp-plain colored", color: "#239120" },
+        { name: "C++", icon: "devicon-cplusplus-plain colored", color: "#00599C" },
+        { name: "C", icon: "devicon-c-plain colored", color: "#00599C" },
+        { name: "Julia", icon: "devicon-julia-plain colored", color: "#9558B2" },
+        { name: "HTML", icon: "devicon-html5-plain colored", color: "#E34F26" },
+        { name: "CSS", icon: "devicon-css3-plain colored", color: "#1572B" },
+        { name: "Figma", icon: "devicon-figma-plain colored", color: "#F24E1E" },
+      ]
+    }
+  ];
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -67,16 +82,16 @@ const Skills = () => {
 
   return (
     <div className="py-12" id="skills-name">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <ApplicationTitle myTitle="Skills" />
         <div className="lg:text-center mb-12">
           <p className="mt-4 max-w-2xl text-xl text-gray-200 lg:mx-auto">
             {translations.skills.description}
           </p>
         </div>
-
+        {/* Frontend, Backend, Infrastructure */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-7"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -86,7 +101,7 @@ const Skills = () => {
             <motion.div
               key={idx}
               variants={cardVariants}
-              className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300"
+              className={`bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 border-l-4 border-blue-400`}
             >
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">
@@ -98,12 +113,54 @@ const Skills = () => {
                       key={skillIdx}
                       className="group relative bg-gray-50 rounded-lg py-2 px-2 sm:p-4 hover:bg-gray-200 transition-all duration-300 border-2 border-gray-200"
                     >
-                      <div className="flex items-center space-x-1 sm:space-x-3">
+                      <div className="flex items-center space-x-1 sm:space-x-1">
                         <i
-                          className={`${skill.icon} text-xl sm:text-2xl`}
+                          className={`${skill.icon} text-xl md:text-base lg:text-2xl`}
                           style={{ color: skill.color }}
                         />
-                        <span className="text-gray-700 group-hover:text-gray-900 font-bold text-sm sm:text-base">
+                        <span className="text-gray-700 group-hover:text-gray-900 font-bold text-sm md:text-base">
+                          {skill.name}
+                        </span>
+                      </div>
+                      <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 w-0 group-hover:w-full transition-all duration-300" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* Other */}
+        <motion.div
+          className="mt-12 w-full lg:w-1/2 mx-auto"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.6 }}
+        >
+          {skillCategoriesElse.map((category, idx) => (
+            <motion.div
+              key={idx}
+              variants={cardVariants}
+              className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 border-l-4 border-green-400" 
+            >
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">
+                  {category.title}
+                </h3>
+                <div className="grid grid-cols-3 gap-4">
+                  {category.skills.map((skill, skillIdx) => (
+                    <div
+                      key={skillIdx}
+                      className="group relative bg-gray-50 rounded-lg py-2 px-2 sm:p-4 hover:bg-gray-200 transition-all duration-300 border-2 border-gray-200"
+                    >
+                      <div className="flex items-center space-x-1 sm:space-x-1">
+                        <i
+                          className={`${skill.icon} text-xl md:text-base lg:text-2xl`}
+                          style={{ color: skill.color }}
+                        />
+                        <span className="text-gray-700 group-hover:text-gray-900 font-bold text-sm md:text-base">
                           {skill.name}
                         </span>
                       </div>
