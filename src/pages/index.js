@@ -1,6 +1,5 @@
 // pages/index.js
 
-import Hero from "../components/Hero";
 import About from "../components/About";
 import Skills from "../components/Skills";
 import App_qcircuit from "@/components/App_qcircuit";

@@ -43,12 +43,12 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 w-full bg-zinc-800 z-50 border-b border-zinc-700 transition-all
-      duration-300 hover:opacity-100 ${isTransparent ? "opacity-40" : "opacity-100"
-      }  ${isOpen ? "opacity-0" : ""} `}>
+      duration-300 ${isOpen ? "opacity-0" : ""} `}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-3/3 md:w-5/6">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center justify-between sm:items-stretch sm:justify-start">
             <div className="flex items-center">
+              {/* logo */}
               <a
                 href="/"
                 className={`text-3xl font-bold text-white `}
@@ -57,15 +57,16 @@ const Navbar = () => {
                 Kota's Portfolio
               </a>
             </div>
-            <div className="ml-10 border-l border-gray-600 w-5">
-            </div>
+
+            {/* メニュー */}
+            <div className="ml-10 border-l border-gray-600 w-5" />
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4 justify-center items-center">
                 {["About", "Skills", "Applications", "Projects"].map((item) => (
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}-name`}
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-400 hover:text-black transition duration-150"
+                    className="rounded px-3 py-2 text-base font-bold text-gray-300 hover:bg-gray-300 hover:text-black transition duration-150"
                     onClick={(e) =>
                       scrollToSection(e, `#${item.toLowerCase()}-name`)
                     }

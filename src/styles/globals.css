@@ -15,7 +15,8 @@
 
 body {
   /* font-family: sans-serif; */
-  font-family: 'Hiragino', sans-serif; /* フォントをRobotoに設定 */
+  font-family: 'Hiragino', sans-serif;
+  /* フォントをRobotoに設定 */
   font-size: 16px;
   line-height: 1.5;
   background-color: #1c1c1c;
@@ -147,7 +148,7 @@ hr {
 }
 
 /* About */
-.about-wrapper{
+.about-wrapper {
   /* padding-top: 100px; */
 }
 
@@ -181,7 +182,7 @@ hr {
   width: 60%;
 }
 
-.about-container .about-my-name{
+.about-container .about-my-name {
   font-family: 'Meiryo';
   font-size: 30px;
 }
@@ -212,8 +213,7 @@ hr {
   transform: scale(1.02);
 }
 
-.handle-toggle-button
-{
+.handle-toggle-button {
   background-color: #FFCC1A;
   color: #1D1E20;
   width: 100px;
@@ -226,8 +226,7 @@ hr {
   /* display: inline-block; */
 }
 
-.handle-toggle-button:hover
-{
+.handle-toggle-button:hover {
   background-color: #ffe27b;
   transform: scale(1.08);
 }
@@ -248,22 +247,23 @@ hr {
 }
 
 .award-container-expanded {
-  height: auto; /* Or a specific height if you know the maximum */
+  height: auto;
+  /* Or a specific height if you know the maximum */
 }
 
-.award-container p{
+.award-container p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.award-container .award-name{
-text-decoration: underline;
-text-decoration-color: rgb(6, 188, 0);
+.award-container .award-name {
+  text-decoration: underline;
+  text-decoration-color: rgb(6, 188, 0);
 }
 
-.award-container a{
+.award-container a {
   margin-top: 10px;
   background-color: rgb(6, 188, 0);
   color: white;
@@ -273,12 +273,12 @@ text-decoration-color: rgb(6, 188, 0);
   transition: all 0.5s ease-in-out;
 }
 
-.award-container a:hover{
+.award-container a:hover {
   background-color: rgb(0, 128, 0);
   transform: scale(1.05);
 }
 
-.award-img-container{
+.award-img-container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -286,7 +286,7 @@ text-decoration-color: rgb(6, 188, 0);
   margin-top: 10px;
 }
 
-.award-container .award-img{
+.award-container .award-img {
   width: 40%;
 }
 
@@ -307,7 +307,7 @@ text-decoration-color: rgb(6, 188, 0);
 
 
 /* paper */
-.paper-container{
+.paper-container {
   padding: 2rem 1rem;
   background-color: #e6e6e6;
   border-radius: 2%;
@@ -322,7 +322,7 @@ text-decoration-color: rgb(6, 188, 0);
   font-size: 4rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  font-family: 'Caveat', cursive; 
+  font-family: 'Caveat', cursive;
 }
 
 .skills-container .grid-skills {
@@ -419,19 +419,23 @@ text-decoration-color: rgb(6, 188, 0);
 
 /* Application */
 .scale-on-hover-app {
-  transition: transform 0.3s ease; /* スムーズな変換のためのトランジション */
+  transition: transform 0.3s ease;
+  /* スムーズな変換のためのトランジション */
 }
 
 .scale-on-hover-app:hover {
-  transform: scale(1.02); /* ホバー時にスケールを1.1倍に */
+  transform: scale(1.02);
+  /* ホバー時にスケールを1.1倍に */
 }
 
 .scale-on-hover-github {
-  transition: transform 0.3s ease; /* スムーズな変換のためのトランジション */
+  transition: transform 0.3s ease;
+  /* スムーズな変換のためのトランジション */
 }
 
 .scale-on-hover-github:hover {
-  transform: scale(1.1); /* ホバー時にスケールを1.1倍に */
+  transform: scale(1.1);
+  /* ホバー時にスケールを1.1倍に */
   color: yellow;
 }
 
@@ -504,11 +508,13 @@ text-decoration-color: rgb(6, 188, 0);
 }
 
 .scale-on-hover-card {
-  transition: transform 0.3s ease; /* スムーズな変換のためのトランジション */
+  transition: transform 0.3s ease;
+  /* スムーズな変換のためのトランジション */
 }
 
 .scale-on-hover-card:hover {
-  transform: scale(1.04); /* ホバー時にスケールを1.1倍に */
+  transform: scale(1.04);
+  /* ホバー時にスケールを1.1倍に */
 }
 
 /* contact */
@@ -543,26 +549,73 @@ text-decoration-color: rgb(6, 188, 0);
 }
 
 .font-custom {
-  font-family: 'Hiragino', sans-serif; /* フォントをRobotoに設定 */
+  font-family: 'Hiragino', sans-serif;
+  /* フォントをRobotoに設定 */
 }
 
 
-.app-name-head-about{
+.app-name-head-about {
   color: rgb(23, 11, 252);
 }
 
-.app-name-head-applications{
+.app-name-head-applications {
   color: rgb(96 165 250);
 }
 
-.app-name-head-skills{
+.app-name-head-skills {
   color: rgb(1, 184, 86);
 }
 
-.app-name-head-projects{
+.app-name-head-projects {
   color: rgb(255, 152, 26);
 }
 
-.app-name-head-contact{
+.app-name-head-contact {
   color: rgb(255, 204, 26);
+}
+
+@keyframes rotatePolygonSphere {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.loading-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f3f4f6;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f4f6;
+  border-top: 5px solid #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loading-text {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

@@ -48,7 +48,7 @@ const About = () => {
 
   return (
     <div className="py-12">
-      <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-8xl sm:px-6 lg:px-8">
         <ApplicationTitle myTitle={"About"} />
         {/* div1 */}
         <div className="flex flex-col mb-12 items-center justify-center">
@@ -71,9 +71,9 @@ const About = () => {
                 <a
                   href="http://watabegroup.quie.ise.shibaura-it.ac.jp/"
                   target="_blank"
-                  className="text-blue-500 transition-colors duration-300 hover:underline"
+                  className="text-blue-500 transition-colors duration-300 underline hover:text-blue-200"
                 >
-                  量子情報工学研究室（渡部研）
+                  量子情報工学研究室（渡部研）<i class="fa-solid fa-up-right-from-square"></i>
                 </a></p>
               <div className="mb-2">
                 出身：東京
