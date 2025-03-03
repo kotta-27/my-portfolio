@@ -9,7 +9,7 @@ import Contact from "../components/Contact";
 import App_nanj from "@/components/App_nanj";
 import App_qpizza from "@/components/App_qpizza";
 import App_tex from "@/components/App_tex";
-
+import App_purchase from "@/components/App_purchase";
 // import Head from 'next/head';
 
 const Home = () => {
@@ -19,6 +19,7 @@ const Home = () => {
         {/* <Hero /> */}
         <About />
         <Skills />
+        <App_purchase />
         <App_tex />
         <App_qpizza />
         <App_nanj />

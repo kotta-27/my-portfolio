@@ -5,7 +5,7 @@ import en from '../locales/en.json';
 const LanguageContext = createContext();
 
 export function LanguageProvider({ children }) {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('ja');
   const translations = { ja, en };
 
   return (

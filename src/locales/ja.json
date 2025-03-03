@@ -111,6 +111,52 @@
         "description": "なんでも連絡ください。"
     },
     "applications": {
+        "purchase": {
+            "title": "Labratory Purchase System",
+            "blocks": [
+                {
+                    "title": "システム概要",
+                    "image": "/purchaseapp.png",
+                    "description": [
+                        "React、Firebaseを用いて作成。",
+                        "研究室内の物品購買管理システムです。",
+                        "購買申請を提出すると、管理者が承認/却下/購入手続きなどの操作を行えます。",
+                        "ステータスが更新されると、申請者画面に通知が表示され、連携されたDiscordにも通知が届きます。"
+                    ]
+                },
+                {
+                    "title": "申請者画面",
+                    "image": "/purchaseapp_2.png",
+                    "description": [
+                        "物品の購入申請を行う画面です。",
+                        "申請内容を入力し、送信すると管理者に通知が届きます。",
+                        "申請内容は後から変更可能であり、更新日時も記録されます。",
+                        "実用性を考慮し、商品URLやコメント欄を設けました。"
+                    ]
+                },
+                {
+                    "title": "管理者画面",
+                    "image": "/purchaseapp.png",
+                    "description": [
+                        "管理者が、申請された物品の承認/却下を行う画面です。",
+                        "承認すると購入手続きに移行します。",
+                        "承認、購入処理などのステータス更新の通知はDiscordに送信されます。",
+                        "申請者画面のステータス更新と連携しています。"
+                    ]
+                },
+                {
+                    "title": "通知機能",
+                    "image": "/purchaseapp_3.png",
+                    "description": [
+                        "申請のステータスが更新されると、",
+                        "申請者に通知（画面右下）が表示され、Discordにも通知が送信されます。",
+                        "また、右上のベルマークにも通知が表示されます。",
+                        ""
+                    ]
+                }
+            ],
+            "note": "※現在は、Firebaseの利用上、ログインしないとシステムにアクセスできません。"
+        },
         "tex": {
             "title": "Img2LaTex Converter",
             "description": [

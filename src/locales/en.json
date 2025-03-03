@@ -111,6 +111,47 @@
 		"description": "Feel free to contact me."
 	},
 	"applications": {
+		"purchase": {
+			"title": "Labratory Purchase System",
+			"blocks": [
+				{
+					"title": "System Overview",
+					"image": "/purchaseapp.png",
+					"description": [
+						"Developed using React and Firebase.",
+						"A system for managing laboratory purchases.",
+						"Allows users to submit purchase requests, which are then reviewed by administrators.",
+						"When the status is updated, notifications are displayed on the applicant's screen and sent to the linked Discord."
+					]
+				},
+				{
+					"title": "Applicant Interface",
+					"image": "/purchaseapp_2.png",
+					"description": [
+						"Allows users to submit purchase requests.",
+						"Requests can be edited later, and the update date and time are recorded.",
+						"Includes a product URL and comment field for practicality."
+					]
+				},
+				{
+					"title": "Administrator Interface",
+					"image": "/purchaseapp.png",
+					"description": [
+						"Allows administrators to review purchase requests and update the status.",
+						"Approval, purchase processing, and other status updates are sent to Discord."
+					]
+				},
+				{
+					"title": "Notification Function",
+					"image": "/purchaseapp_3.png",
+					"description": [
+						"When the status is updated, notifications are displayed on the applicant's screen and sent to the linked Discord.",
+						"Also, the notification is displayed in the bell mark in the upper right corner."
+					]
+				}
+			],
+			"note": "* Currently requires login authentication due to API usage restrictions."
+		},
 		"tex": {
 			"title": "Img2LaTex Converter",
 			"description": [
