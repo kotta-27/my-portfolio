@@ -63,7 +63,7 @@ const Navbar = () => {
         {/* メニュー */}
         <div className="flex flex-row sm:w-2/3 border-l border-gray-600">
           <div className="hidden sm:ml-6 sm:block w-2/3">
-            <div className="flex sm:space-x-4 space-x-2 items-center">
+            <div className="flex md:space-x-4 space-x-1 items-center">
               {[
                 { id: 'about', text: 'About' },
                 { id: 'skills', text: 'Skills' },
@@ -73,7 +73,7 @@ const Navbar = () => {
                 <a
                   key={item.id}
                   href={`#${item.id}-name`}
-                  className="rounded py-2 text-base font-bold text-gray-300 hover:bg-gray-300 hover:text-black transition duration-150"
+                  className="rounded py-2 px-1 md:px-2 text-sm md:text-base font-bold text-gray-300 hover:bg-gray-300 hover:text-black transition duration-150"
                   onClick={(e) => scrollToSection(e, `#${item.id}-name`)}
                 >
                   {item.text}
