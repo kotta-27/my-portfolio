@@ -154,22 +154,69 @@
 		},
 		"tex": {
 			"title": "Img2LaTex Converter",
-			"description": [
-				"Developed using React.",
-				"An application that generates LaTeX code from mathematical equations in images.",
-				"Uses Gemini API for image analysis and LaTeX code generation.",
-				"Features a \"Explain the Equation\" button that displays a simple explanation of the equation."
+			"blocks": [
+				{
+					"title": "Main Screen",
+					"image": "/texapp.png",
+					"description": [
+						"Developed using React.",
+						"An application that generates LaTeX code from mathematical equations in images.",
+						"Uses Gemini API for image analysis and LaTeX code generation.",
+						"Features a \"Explain the Equation\" button that displays a simple explanation of the equation."
+					]
+				},
+				{
+					"title": "Result Display",
+					"image": "/texapp_2.png",
+					"description": [
+						"Displays the generated LaTeX code and explains the equation with a \"Explain the Equation\" button.",
+						"Also, a copy button is configured to copy the code to the clipboard.",
+						"A snackbar is displayed at the top of the screen to confirm that the code has been copied."
+					]
+				},
+				{
+					"title": "Handwritten Equations are also Recognized",
+					"image": "/texapp_3.png",
+					"description": [
+						"Handwritten equations are also recognized.",
+						"This example is a complex Ramanujan formula that includes exponents and factorials, but it is recognized without any issues."
+					]
+				}
 			],
 			"note": "* Currently requires login authentication due to API usage restrictions."
 		},
 		"pizza": {
 			"title": "Quantum Pizza",
-			"description": [
-				"Developed using React.",
-				"A game where you apply the appropriate quantum gates to create pizzas that match the given challenge.",
-				"Includes detailed explanations to serve as a beginner-friendly introduction to quantum information.",
-				"Created as an exhibit for the RIKEN × Miraikan event 'クイズとゲームでせまる！量子コンピュータ'.",
-				"Supports Japanese, English, and Chinese."
+			"blocks": [
+				{
+					"title": "Main Screen",
+					"image": "/qpizzaapp.png",
+					"description": [
+						"Developed using React.",
+						"A game where you apply the appropriate quantum gates to create pizzas that match the given challenge.",
+						"Includes detailed explanations to serve as a beginner-friendly introduction to quantum information.",
+						"Created as an exhibit for the RIKEN × Miraikan event 'クイズとゲームでせまる！量子コンピュータ'.",
+						"Supports Japanese, English, and Chinese."
+					]
+				},
+				{
+					"title": "Game Screen",
+					"image": "/qpizzaapp.png",
+					"description": [
+						"Quantum gates are applied by dragging and dropping them onto the pizza.",
+						"The goal is to create a pizza that matches the given challenge.",
+						"Includes detailed explanations to serve as a beginner-friendly introduction to quantum information."
+					]
+				},
+				{
+					"title": "Explanation of Quantum Circuit and Gate / Multi-Language Support",
+					"image": "/qpizzaapp2.png",
+					"description": [
+						"For the final question, a hint button is configured.",
+						"When the answer is correct, the explanation of the quantum circuit and gate is displayed.",
+						"Supports Japanese, English, and Chinese."
+					]
+				}
 			],
 			"notes": [
 				{
