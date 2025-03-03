@@ -7,6 +7,16 @@
 		"birthplace": "Birthplace: Tokyo",
 		"graduationResearch": "Graduation Research: \"Application of the Imaginary Time Evolution Method to the Shortest Vector Problem in Excited States Search\"",
 		"researchTheme": "Research Theme: Lattice Cryptography, Quantum Algorithms, Mathematical Optimization",
+		"qiita": [
+			{
+				"title": "[Qutip] Simulating Imaginary Time Evolution of Quantum States in Python",
+				"link": "https://qiita.com/Mel_14/items/91465234a64d9a6eec99"
+			},
+			{
+				"title": "[Qiskit] How to Use QuantumCircuit.draw() to Draw Quantum Circuits",
+				"link": "https://qiita.com/Mel_14/items/fe9d66c4ef41bc39f224"
+			}
+		],
 		"paper": "🎉 New Paper Published!",
 		"experienceTag": "Experience",
 		"achievements": "Achievements",

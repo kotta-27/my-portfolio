@@ -85,6 +85,21 @@ const About = () => {
               <p className="mb-2">
                 {translations.about.researchTheme}
               </p>
+              <p className="mb-2">
+                <span>Qiita：</span>
+                {translations.about.qiita.map((qiita, index) => (
+                  <p key={index} className="ml-5">
+                    {"・"}
+                    <a
+                      href={qiita.link}
+                      target="_blank"
+                      className="text-blue-500 transition-colors duration-300 underline hover:text-blue-200"
+                    >
+                      {qiita.title}
+                    </a>
+                  </p>
+                ))}
+              </p>
 
             </div>
             <div
