@@ -247,10 +247,35 @@
 		},
 		"nanj": {
 			"title": "Bulletin Board Generator",
-			"description": [
-				"Frontend: React, Backend: Python",
-				"Automatically generates discussion threads based on user-input keywords.",
-				"Uses Claude 3 Haiku and Stable Diffusion as generation models, with Amazon Bedrock for orchestration."
+			"blocks": [
+				{
+					"title": "Main Screen",
+					"image": "/nanjapp.png",
+					"description": [
+						"Developed using React.",
+						"A game where you apply the appropriate quantum gates to create pizzas that match the given challenge.",
+						"Uses Claude 3 Haiku and Stable Diffusion as generation models, with Amazon Bedrock for orchestration."
+					]
+				},
+				{
+					"title": "Parameters",
+					"image": "/nanj_params.png",
+					"description": [
+						"Users can change the parameters of the thread, such as the number of threads (the number of replies that will be expanded) and keywords.",
+						"The keywords can be changed to change the tone and content of the thread.",
+						"As \"danger level\", users can set the degree of rudeness of the thread.",
+						"Also, users can set keywords like \"nanJ\" and \"Otaku\" to change the tone and content of the thread."
+					]
+				},
+				{
+					"title": "System Architecture",
+					"image": "/Lab_Hackathon.svg",
+					"description": [
+						"Users use AWS Cognito for login.",
+						"API Gateway is used to control the generation model.",
+						"The generation models are Claude 3 Haiku and Stable Diffusion, with Amazon Bedrock for orchestration."
+					]
+				}
 			],
 			"notes": [
 				{

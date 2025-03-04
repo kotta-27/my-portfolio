@@ -124,7 +124,7 @@ const App_qpizza = () => {
 
               <div className="flex justify-center mt-5">
                 {translations.applications.pizza.notes.map((note, index) => (
-                  <div className="mb-4">
+                  <div className="mb-4 flex flex-col items-center justify-center">
                     <React.Fragment key={index}>
                       {note.note}<br />
                       <a href={note.link} target="_blank" className="underline text-blue-500 hover:text-blue-200 transition-colors duration-300 break-all">
