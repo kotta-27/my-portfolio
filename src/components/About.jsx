@@ -109,14 +109,16 @@ const About = () => {
                 : "-translate-x-full opacity-0"
                 }`}
             >
-              <div className="relative h-80 w-100">
-                <Image
-                  src="/mepic.jpg"
-                  alt="sample"
-                  className="rounded shadow-xl"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
+              <div className="flex justify-center items-center">
+                <div className="">
+                  <Image
+                    src="/mepic.jpg"
+                    alt="sample"
+                    className="rounded shadow-xl max-w-80 max-h-80 mx-auto my-auto hover:scale-105 hover:border-2 hover:border-blue-500 transition-all duration-300"
+                    fill
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
               </div>
             </div>
           </div>
