@@ -82,26 +82,7 @@ const App_qual = () => {
               {translations.applications.qual.title}
             </a>
 
-            {/* 吹き出し */}
-            <AnimatePresence>
-              {showTooltip && (
-                <motion.div
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  className="absolute -top-16 left-1/2 transform -translate-x-1/2"
-                >
-                  <div className="relative bg-blue-500 text-white px-6 py-3 rounded-2xl text-sm whitespace-nowrap shadow-lg">
-                    {translations.applications.qual.tooltip}
-                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
-                      <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 8L0 0H16L8 8Z" fill="#3B82F6" />
-                      </svg>
-                    </div>
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
+
           </div>
 
           <div className="w-full sm:w-1/3 flex justify-end">
