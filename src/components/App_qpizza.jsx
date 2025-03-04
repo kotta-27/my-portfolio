@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useLanguage } from '../contexts/LanguageContext';
 import { motion, AnimatePresence } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 
 const Badge = ({ gradient, textColor, children }) => (
   <div className="w-full px-3">
@@ -28,6 +29,25 @@ const App_qpizza = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slideDirection, setSlideDirection] = useState(1);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
+
+  // InView hookの設定
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    triggerOnce: true
+  });
+
+  // タイトルが表示されたら吹き出しを表示
+  React.useEffect(() => {
+    if (inView) {
+      setShowTooltip(true);
+      const timer = setTimeout(() => {
+        setShowTooltip(false);
+      }, 5000); // 5秒後に非表示
+
+      return () => clearTimeout(timer);
+    }
+  }, [inView]);
 
   // blocksとbadgesを取得
   const blocks = translations?.applications?.pizza?.blocks || [];
@@ -60,8 +80,46 @@ const App_qpizza = () => {
             {/* タイトルとバッジのコンテナ */}
             <div className="relative flex flex-col sm:flex-row items-center mb-6">
               <div className="w-full sm:w-1/3" />
-              <div className="text-2xl font-bold underline py-2 my-5 sm:my-0 w-full sm:w-1/3 text-center">
-                {translations.applications.pizza.title}
+              <div ref={ref} className="relative text-2xl font-bold underline py-2 my-5 sm:my-0 w-full sm:w-1/3 text-center">
+                <a
+                  href="https://qpizza-game.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-300 transition-colors duration-300"
+                >
+                  {translations.applications.pizza.title}
+                </a>
+
+                {/* 吹き出し */}
+                <AnimatePresence>
+                  {showTooltip && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      className="absolute -top-16 left-1/2 transform -translate-x-1/2"
+                    >
+                      <div className="relative bg-blue-500 text-white px-6 py-3 rounded-2xl text-sm whitespace-nowrap shadow-lg">
+                        {translations.applications.pizza.tooltip}
+                        {/* 吹き出しの尻尾 */}
+                        <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
+                          <svg
+                            width="16"
+                            height="8"
+                            viewBox="0 0 16 8"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8 8L0 0H16L8 8Z"
+                              fill="#3B82F6" // bg-blue-500 と同じ色
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
 
               {/* バッジコンテナ */}
@@ -121,6 +179,8 @@ const App_qpizza = () => {
                   </div>
                 </motion.div>
               </AnimatePresence>
+
+              <div className="w-5/6 mx-auto border-t-2 border-gray-700 my-5" />
 
               <div className="flex justify-center mt-5">
                 {translations.applications.pizza.notes.map((note, index) => (

@@ -197,6 +197,7 @@
 		},
 		"pizza": {
 			"title": "Quantum Pizza",
+			"tooltip": "Access is here!",
 			"blocks": [
 				{
 					"title": "Main Screen",
@@ -246,15 +247,16 @@
 			}
 		},
 		"nanj": {
-			"title": "Bulletin Board Generator",
+			"title1": "Bulletin Board Generator",
+			"title2": "（NanJenerator）",
 			"blocks": [
 				{
 					"title": "Main Screen",
 					"image": "/nanjapp.png",
 					"description": [
-						"Developed using React.",
-						"A game where you apply the appropriate quantum gates to create pizzas that match the given challenge.",
-						"Uses Claude 3 Haiku and Stable Diffusion as generation models, with Amazon Bedrock for orchestration."
+						"Frontend: React, Backend: Python",
+						"Receives user input and automatically generates a thread like \"2ch\" of appropriate content.",
+						"The thread can be expanded by replying to it, and the thread can be further expanded by replying to the reply."
 					]
 				},
 				{
@@ -271,9 +273,17 @@
 					"title": "System Architecture",
 					"image": "/Lab_Hackathon.svg",
 					"description": [
-						"Users use AWS Cognito for login.",
+						"Users use AWS Cognito for login and authentication.",
 						"API Gateway is used to control the generation model.",
-						"The generation models are Claude 3 Haiku and Stable Diffusion, with Amazon Bedrock for orchestration."
+						"The generation models are Claude3 Haiku and Stable Diffusion, with Amazon Bedrock for orchestration."
+					]
+				},
+				{
+					"title": "Our Team",
+					"image": "/hackathon_team.jpg",
+					"description": [
+						"We are a team of five people who participated in the Progate × AWS Hackathon 2024.",
+						"All of us had no experience with hackathons, but we won the grand prize in our first attempt!"
 					]
 				}
 			],
@@ -294,21 +304,55 @@
 		},
 		"qcircuit": {
 			"title": "Quantum Circuit Demo Application",
-			"description": [
-				"Quantum circuit simulator using React, Django, and Qiskit",
-				"Easy simulation of quantum operations on the browser."
+			"tooltip": "Access is here!",
+			"blocks": [
+				{
+					"title": "Main Screen",
+					"image": "/watabeapp.png",
+					"description": [
+						"Quantum circuit simulator using React, Django, and Qiskit",
+						"Easy simulation of quantum operations on the browser.",
+						"The configuration information of the quantum circuit is sent to the backend, and the execution result of the quantum circuit is obtained as an API."
+					]
+				}
 			]
 		},
 		"qual": {
 			"title": "Quantum Typing Game",
-			"description": [
-				"Frontend: Remix, Backend: Qulacs(Python)",
-				"Uses user-typed words to perform quantum circuit learning and generates more difficult words for the user."
+			"tooltip": "Access is here!",
+			"blocks": [
+				{
+					"title": "Main Screen",
+					"image": "/typingapp.png",
+					"description": [
+						"Frontend: Remix, Backend: Qulacs(Python)",
+						"Uses user-typed words to perform quantum circuit learning",
+						"and generates more difficult words for the user."
+					]
+				},
+				{
+					"title": "Quantum Machine Learning",
+					"image": "/qual_qcl.png",
+					"description": [
+						"Uses Qulacs for backend quantum circuit learning.",
+						"Uses user-typed words to perform quantum circuit learning",
+						"and predicts the typing time of unknown words by regression."
+					]
+				},
+				{
+					"title": "System Architecture",
+					"image": "/qual_sys.png",
+					"description": [
+						"Deployed using AWS and Vercel.",
+						"Frontend: Remix, Backend: Qulacs(Python)"
+					]
+				}
 			],
 			"badge": {
 				"line1": "QC4U2 Group Work",
 				"line2": "5th Place Overall"
-			}
+			},
+			"note": "※Currently not accessible."
 		}
 	}
 }

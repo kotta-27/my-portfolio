@@ -61,19 +61,23 @@ const App_nanj = () => {
             <div className="relative flex flex-col sm:flex-row items-center mb-6">
               <div className="w-full sm:w-1/3" />
               <div className="text-2xl font-bold underline py-2 my-5 sm:my-0 w-full sm:w-1/3 text-center">
-                {translations.applications.nanj.title}
+                {translations.applications.nanj.title1}
+                <br />
+                {translations.applications.nanj.title2}
               </div>
 
               {/* バッジコンテナ */}
               <div className="w-full sm:w-1/3 flex flex-row justify-end gap-2 px-2">
-                <Badge
-                  gradient="linear-gradient(135deg, #FF6B6B, #FFE66D)"
-                  textColor="#000"
+                <div className="flex flex-row gap-2">
+                  <Badge
+                    gradient="linear-gradient(135deg, #FF6B6B, #FFE66D)"
+                    textColor="#000"
                 >
                   <span>{badge.line1}</span>
                   <br />
-                  <span>{badge.line2}</span>
-                </Badge>
+                    <span>{badge.line2}</span>
+                  </Badge>
+                </div>
               </div>
             </div>
 
@@ -112,6 +116,8 @@ const App_nanj = () => {
                   </div>
                 </motion.div>
               </AnimatePresence>
+
+              <div className="w-5/6 mx-auto border-t-2 border-gray-700 my-5" />
 
               <div className="flex flex-col items-center justify-center mt-5 space-y-2">
                 {translations.applications.nanj.notes.map((note, index) => (
