@@ -166,7 +166,7 @@ const Skills = () => {
                           {skill.name}
                         </span>
                       </div>
-                      <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 w-0 group-hover:w-full transition-all duration-300" />
+                      <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-green-500 to-blue-200 w-0 group-hover:w-full transition-all duration-300" />
                     </div>
                   ))}
                 </div>
