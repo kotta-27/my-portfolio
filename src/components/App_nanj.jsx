@@ -72,9 +72,9 @@ const App_nanj = () => {
                   <Badge
                     gradient="linear-gradient(135deg, #FF6B6B, #FFE66D)"
                     textColor="#000"
-                >
-                  <span>{badge.line1}</span>
-                  <br />
+                  >
+                    <span>{badge.line1}</span>
+                    <br />
                     <span>{badge.line2}</span>
                   </Badge>
                 </div>
@@ -129,6 +129,15 @@ const App_nanj = () => {
                     </p>
                   </div>
                 ))}
+              </div>
+
+              <div className="flex justify-end mt-4">
+                <a href="https://github.com/kotta-27/202406hackathon_frontend/" target="_blank" rel="noopener noreferrer">
+                  <i
+                    className="fa-brands fa-github text-3xl py-4 px-2 scale-on-hover-github translate shadow"
+                    style={{ fontSize: "3rem" }}
+                  ></i>
+                </a>
               </div>
 
               {currentIndex > 0 && (

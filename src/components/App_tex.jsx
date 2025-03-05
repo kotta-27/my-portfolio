@@ -76,6 +76,15 @@ const App_tex = () => {
                 {translations.applications.tex.note}
               </div>
 
+              <div className="flex justify-end mt-4">
+                <a href="https://github.com/kotta-27/img2tex-app" target="_blank" rel="noopener noreferrer">
+                  <i
+                    className="fa-brands fa-github text-3xl py-4 px-2 scale-on-hover-github translate shadow"
+                    style={{ fontSize: "3rem" }}
+                  ></i>
+                </a>
+              </div>
+
               {currentIndex > 0 && (
                 <button
                   onClick={prevBlock}

@@ -149,7 +149,7 @@ const App_qcircuit = () => {
         </div>
 
         <div className="flex justify-end mt-4">
-          <a href="https://github.com/Kota-Murai/qcircuit-frontend" target="_blank">
+          <a href="https://github.com/kotta-27/react-quantumcircuit" target="_blank">
             <i
               className="fa-brands fa-github text-3xl py-4 px-2 scale-on-hover-github translate shadow"
               style={{ fontSize: "3rem" }}
