@@ -127,7 +127,7 @@ const About = () => {
         <div className="flex w-full justify-center">
           <p className="mb-4 w-full md:w-5/6">
             <p className="mb-4 text-2xl font-bold">{translations.about.paper}</p>
-            <div className="mb-5 rounded-md bg-gray-100 p-4">
+            <div className="mb-5 w-5/6 mx-auto rounded-md bg-gray-100 p-4 border-l-4 border-gray-500 border-b-4">
               <p className="mb-2">
                 <a
                   href="https://arxiv.org/abs/2408.16062v2"
@@ -213,15 +213,17 @@ const About = () => {
                     {achievement.suffix}
                     {achievement.hasAward && (
                       <button onClick={handleToggle}>
-                        <div className="handle-toggle-button">!!!!</div>
+                        <div className="handle-toggle-button">
+                          <i className="fa-solid fa-chevron-down"></i>
+                        </div>
                       </button>
                     )}
                     <br />
                   </div>
                 ))}
                 {isExpanded && (
-                  <div className="mt-4 bg-gray-100 px-3 sm:px-20 py-5 rounded-lg">
-                    <p className="w-full text-black">
+                  <div className="flex flex-col justify-center items-center mt-4 bg-gray-100 px-3 sm:px-20 py-5 rounded-lg">
+                    <p className="text-black">
                       {translations.about.award.description}
                       <span className="font-bold">
                         {translations.about.award.title}
@@ -234,10 +236,12 @@ const About = () => {
                         <img
                           src="/me_and_poster.jpg"
                           alt="award"
-                          className="rounded-lg shadow-md w-1/2 sm:w-full"
+                          className="rounded-lg shadow-md w-1/2 sm:max-w-full"
+                          fill
+                          style={{ objectFit: "cover" }}
                         />
                       </div>
-                      <div className="w-70 sm:w-80 aspect-auto sm:ml-10 mt-3">
+                      <div className="w-70 sm:w-80 aspect-auto sm:ml-10 my-auto">
                         <img
                           src="/qi_award_table.png"
                           alt="award_table"

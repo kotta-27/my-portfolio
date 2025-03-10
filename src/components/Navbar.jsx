@@ -88,9 +88,9 @@ const Navbar = () => {
             <div className="flex justify-end md:pr-20 pr-5">
               <button
                 onClick={() => setLanguage(language === "ja" ? "en" : "ja")}
-                className="px-0 sm:px-4 py-2 w-10 sm:w-24 text-center border transition-colors rounded-md bg-gray-700 text-white"
+                className="px-0 sm:px-1 py-2 w-10 sm:w-24 text-center border transition-colors rounded-md bg-gray-700 text-white"
               >
-                {language === "ja" ? "English" : "日本語"}
+                {language === "ja" ? "English" : "Japanese"}
               </button>
             </div>
           </div>

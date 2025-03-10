@@ -1,6 +1,7 @@
 // pages/_app.js
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Head from 'next/head';
 import "@/styles/globals.css";
 import Layout from "../components/Layout";
 import { useRouter } from "next/router";
@@ -56,6 +57,10 @@ export default function App({ Component, pageProps }) {
 
   return (
     <LanguageProvider>
+      <Head>
+        <title>Kota's Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <AnimatePresence mode="wait">
         {showWelcome ? (
           <EnhancedLoading key="welcome" />

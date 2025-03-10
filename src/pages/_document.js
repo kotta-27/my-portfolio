@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="ja">
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -66,6 +66,7 @@ export default function Document() {
           src="https://kit.fontawesome.com/e64ae804d4.js"
           crossorigin="anonymous"
         ></script>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />
