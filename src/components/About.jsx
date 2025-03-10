@@ -104,21 +104,22 @@ const About = () => {
             </div>
             <div
               ref={imageRef}
-              className={`md:w-1/3 transition-all duration-1000 ease-out transform ${isVisible.image
-                ? "opacity-100 translate-x-0"
-                : "-translate-x-full opacity-0"
+              className={`md:w-1/3 transition-all duration-1000 ease-out transform ${isVisible.image ? "opacity-100 translate-x-0" : "-translate-x-full opacity-0"
                 }`}
             >
-              <div className="flex justify-center items-center">
-                <div className="">
-                  <Image
-                    src="/mepic.jpg"
-                    alt="sample"
-                    className="rounded shadow-xl max-w-80 max-h-80 mx-auto my-auto hover:scale-105 hover:border-2 hover:border-blue-500 transition-all duration-300"
-                    fill
-                    style={{ objectFit: "cover" }}
-                  />
-                </div>
+              <div className="relative w-full h-[300px]">
+                <Image
+                  src="/mepic.jpg"
+                  alt="profile"
+                  className="rounded shadow-xl hover:scale-105 hover:border-2 hover:border-blue-500 transition-all duration-300"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  priority
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "center"
+                  }}
+                />
               </div>
             </div>
           </div>
