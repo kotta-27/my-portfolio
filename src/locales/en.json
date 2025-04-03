@@ -15,6 +15,10 @@
 			{
 				"title": "[Qiskit] How to Use QuantumCircuit.draw() to Draw Quantum Circuits",
 				"link": "https://qiita.com/Mel_14/items/fe9d66c4ef41bc39f224"
+			},
+			{
+				"title": "QURI-Parts Installation Problem",
+				"link": "https://qiita.com/Mel_14/items/02bc1b4e44961bdb2947"
 			}
 		],
 		"paper": "🎉 New Paper Published!",
@@ -101,6 +105,13 @@
 				"description": "Research Engineer Intern at Jij Inc.",
 				"interviewLink": "https://www.j-ij.com/ja/recruit/interview-mizuno",
 				"interviewText": "Read the interview here"
+			},
+			{
+				"date": "March 2025",
+				"prefix": "Student Staff at MEXT-hosted event \"",
+				"linkText": "Entanglement Moment – [Quantum, Sea, Universe]×Art\" Play Event \"Experience Quantum through Games\"",
+				"suffix": "\"",
+				"link": "https://www.qst.go.jp/site/entangle-moment/pre-event.html"
 			}
 		],
 		"award": {

@@ -15,6 +15,10 @@
             {
                 "title": "[Qiskit] 量子回路描画 QuantumCircuit.draw()の使い方",
                 "link": "https://qiita.com/Mel_14/items/fe9d66c4ef41bc39f224"
+            },
+            {
+                "title": "QURI-Partsのインストールでちょっと詰まった",
+                "link": "https://qiita.com/Mel_14/items/02bc1b4e44961bdb2947"
             }
         ],
         "paper": "🎉 論文投稿しました！",
@@ -101,6 +105,13 @@
                 "description": "株式会社Jij リサーチエンジニアインターン",
                 "interviewLink": "https://www.j-ij.com/ja/recruit/interview-mizuno",
                 "interviewText": "インタビュー記事はこちら"
+            },
+            {
+                "date": "2025/03〜",
+                "prefix": "文部科学省 量子研究推進室主催「",
+                "linkText": "大阪・関西万博「エンタングル・モーメント ―[量子・海・宇宙]×芸術」プレイベント「ゲームで体験！作って実感！量子の世界」",
+                "suffix": "」学生スタッフ",
+                "link": "https://www.qst.go.jp/site/entangle-moment/pre-event.html"
             }
         ],
         "award": {

@@ -128,7 +128,7 @@ const About = () => {
         <div className="flex w-full justify-center">
           <p className="mb-4 w-full md:w-5/6">
             <p className="mb-4 text-2xl font-bold">{translations.about.paper}</p>
-            <div className="mb-5 w-full md:w-5/6 mx-auto rounded-md bg-gray-100 p-4 border-l-4 border-gray-500 border-b-4">
+            <div className="mb-5 w-full md:w-5/6 mx-auto rounded-md bg-gray-100 p-4 border-l-4 border-gray-500 border-b-4 hover:scale-102 transition-all duration-300">
               <p className="mb-2">
                 <a
                   href="https://arxiv.org/abs/2408.16062v2"
